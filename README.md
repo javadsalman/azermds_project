@@ -1,2 +1,2 @@
 # azermds
-The raw source code of azermds.org v1
+Web project for medical doctors and students association
