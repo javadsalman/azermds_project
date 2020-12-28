@@ -1,0 +1,324 @@
+body{
+    background-color: #f8f9fa;
+}
+
+#accordionQuestion div:nth-child(odd) button{
+    background-color: white !important;
+}
+
+.font-nunito{
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-black{
+    color: black !important;
+}
+
+.blue-green-gradient{
+    background: linear-gradient(45deg, rgba(30,87,153,0.7) 0%,rgba(41,137,216,0.7) 50%,rgba(125,185,232,0.7) 100%);
+}
+.card-border{
+    border-width: 8px !important;
+    border-bottom-width: 12px !important;
+}
+
+
+/* follow us */
+.instagram-gradient{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+
+.logo-rounded:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.faq-arrow{
+    top: 25%;
+    right: 15px;
+}
+
+
+
+
+@media only screen and (min-width: 0px) {
+    /* jumbotron */
+    #jumbotron{
+        background-image: linear-gradient(45deg, rgba(30,87,153,0.7) 0%,rgba(41,137,216,0.7) 50%,rgba(125,185,232,0.7) 100%),
+        url(/static/base/index/images/bi.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #login-button{
+        color: #5792C8;
+    }
+
+    #login-button:hover{
+        background-color: rgba(0,0,0,0) !important;
+        color: white;
+        border-color: white;
+    }
+    
+    #register-button{
+        color: white;
+    }
+
+    #register-button:hover{
+        color:#5792C8;
+        background-color: white;
+    }
+
+    #jumbo-h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    #jumbo-h2{
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #jumbo-p{
+        font-size: 13px;
+        text-align: justify;
+    }
+
+
+    
+    .statistic-text{
+        font-size: 25px;
+    }
+    
+
+    /* commite */
+    .commitee-name{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    
+    #faq-title{
+        font-size: 35px;
+    }
+
+
+
+
+
+    .aspect-ratio-box {
+        position: relative;
+    }
+    
+    
+    /* Image is positioned absolutely relative to the parent element */
+    .aspect-ratio-box img {
+        /* Image should match parent box size */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .aspect-ratio-box img{
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    /* Create a pseudo element that uses padding-bottom to take up space */
+    .aspect-ratio-box::after {
+        display: block;
+        content: '';
+    }
+    .article-image-div::after {
+        /* 16:9 aspect ratio */
+        padding-bottom: 59.81%;
+    }
+
+    /* Create a pseudo element that uses padding-bottom to take up space */
+    .exchange-image-div::after {
+        /* 16:9 aspect ratio */
+        padding-bottom: 65%;
+    }
+
+
+
+
+
+
+    
+    .footer-icon{
+        font-size: 40px;
+        color: white;
+    }
+    .footer-icon:hover{
+        color: rgba(255, 255, 255, 0.7)
+    }
+
+    .mobile-entry-size{
+        font-size: 40px;
+    }
+    
+    .mobile-app-name-size{
+        font-size: 60px;
+    }
+
+    .logo-rounded{
+        border-width: 3px;
+        border-color: white;
+        border-style:groove;
+        border-radius: 50%;
+        font-size: 25px;
+        transition: background-color .35s !important;
+    }
+    .facebook{
+        padding: 8px 19px;
+    }
+    .instagram{
+        padding: 8px 16px;
+    }
+    .youtube{
+        padding: 8px 12.5px;
+    }
+    .twitter{
+        padding: 8px 14px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    #jumbotron{
+        background: linear-gradient(45deg, rgba(88,244,197,1) -1%,rgba(210,247,236,1) 31%,rgba(115,177,231,1) 63%,rgba(10,119,213,1) 96%);
+    }
+    #login-button{
+        color: #9BCFEA;
+    }
+    #register-button:hover{
+        color: #9BCFEA;
+    }
+    #jumbo-h1{
+        font-size: 35px;
+        margin: 0;
+    }
+    #jumbo-h2{
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #jumbo-p{
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    #doctor-image{
+        width: 104%;
+        padding-top: 5px;
+    }
+
+
+    .statistic-text{
+        font-size: 17px;
+    }
+    
+
+   
+
+    .commitee-name{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #faq-title{
+        font-size: 40px;
+    }
+    
+    .mobile-entry-size{
+        font-size: 56px;
+    }
+
+    .mobile-app-name-size{
+        font-size: 72px;
+    }
+
+    .logo-rounded{
+        font-size: 40px;
+    }
+
+    .facebook{
+        padding: 8px 25.5px;
+    }
+    .instagram{
+        padding: 8px 20.5px;
+    }
+    .youtube{
+        padding: 8px 15.5px;
+    }
+    .twitter{
+        padding: 8px 18px;
+    }
+
+}
+
+@media only screen and (min-width: 891px) {
+    #jumbo-h1{
+        font-size: 40px ;
+        padding-top: 25px;
+    }
+    #jumbo-h2{
+        font-size: 22px;
+    }
+    #jumbo-p{
+        font-size: 16px;
+    }
+    #doctor-image{
+        padding-top: 15px;
+        padding-right: 7px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+    #jumbo-h1{
+        font-size: 40px ;
+    }
+    #jumbo-h2{
+        font-size: 25px;
+    }
+    #jumbo-p{
+        font-size: 16px;
+    }
+    #doctor-image{
+        width: 100%;
+    }
+
+
+    .statistic-text{
+        font-size: 22px;
+    }
+
+    
+    .footer-icon{
+        font-size: 25px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    #jumbo-h2{
+        width: 90%;
+    }
+    #jumbo-p{
+        width: 90%;
+    }
+    #doctor-image{
+        width: 90%;
+    }
+
+}
+

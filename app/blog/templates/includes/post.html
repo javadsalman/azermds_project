@@ -1,0 +1,44 @@
+{% load static %}
+{% load custom_filter %}
+{% for article in articles %}
+
+        <!-- post -->
+    {% if forloop.counter0 > 2 or page_obj.number > 1 %}
+        <div class="col-md-12">
+            <div class="post post-row">
+    {% elif forloop.counter0 > 0 %} 
+        <div class="col-md-6">
+            <div class="post second">
+    {% else %}
+        <div class="col-md-12">
+            <div class="post post-thumb">
+    {% endif %}
+                <figure>
+                    <a class="post-img" href="{% url 'article' article.pk article.slug %}">
+                            <img {% if page_obj.number < 2 and forloop.counter0 < 3 %} id="image-{{forloop.counter}}"{% endif %}
+                                class="post-image" src="{{article.main_image.url}}" 
+                                alt="{{article.get_title}}">
+                    </a>
+                </figure>
+                <div class="post-body">
+                    <div class="post-meta">
+                        <a class="post-category cat-2" href="{% url 'blog' %}?type=category&value={{article.category.slug}}">
+                            {{article.category.get_title}}
+                        </a>
+                        <time class="post-date">{{article.pub_date|date:'j F Y' }}</time>
+                    </div>
+                    <h3 class="post-title"><a href="{% url 'article' article.pk article.slug%}">
+                        {{article.get_title}}
+                    </a></h3>
+                    {% if forloop.counter0 > 2 %}
+                        <div>
+                            <p>
+                                {{article.get_content|truncatecontent:150}}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+{% endfor %}

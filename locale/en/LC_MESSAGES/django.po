@@ -1,0 +1,461 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-21 22:54+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app\blog\templates\article.html:107
+msgid "Əlaqəli"
+msgstr "Related"
+
+#: .\app\blog\templates\blog.html:7 .\app\blog\templates\blog.html:12
+msgid "AzerMDS Bloq - Yeni məqalələrlə yeni biliklər və fürsətlər"
+msgstr "AzerMDS Blog - Explore new articles, gain new knowledge"
+
+#: .\app\blog\templates\blog.html:8
+msgid ""
+"AzerMDS ilə bağlı hər şeyi bloqumuzdan öyrənə bilərsiz. Ən son yenilik və "
+"imkanlar barədə sizi məlumatlandırmaq üçün ən yeni məqalələri sizinlə "
+"bölüşürük."
+msgstr ""
+"Learn everything related to AzerMDS by keeping up to date via our blog. We "
+"share the latest articles to get you aware of the recent news and "
+"opportunities!"
+
+#: .\app\blog\templates\blog.html:39
+msgid "Ana Səhifə"
+msgstr "Home"
+
+#: .\app\blog\templates\blog.html:40 .\app\blog\templates\blog.html:42
+#: .\templates\base\layout.html:149
+msgid "Bloq"
+msgstr "Blog"
+
+#: .\app\blog\templates\blog.html:69
+msgid "Heç bir nəticə tapılmadı! :"
+msgstr "There is no result! :"
+
+#: .\app\blog\templates\blog.html:80
+msgid "Kategoriyalar"
+msgstr "Categories"
+
+#: .\app\blog\templates\blog.html:86
+#: .\app\blog\templates\includes\search-field.html:7
+msgid "Hamısı"
+msgstr "All"
+
+#: .\app\blog\templates\blog.html:109
+msgid "Arxiv"
+msgstr "Archive"
+
+#: .\app\blog\templates\blog.html:113
+msgid "Bu gün"
+msgstr "Today"
+
+#: .\app\blog\templates\blog.html:114
+msgid "Dünən"
+msgstr "Yesterday"
+
+#: .\app\blog\templates\blog.html:115
+msgid "1 həftə əvvəl"
+msgstr "A week ago"
+
+#: .\app\blog\templates\blog.html:116
+msgid "1 ay əvvəl"
+msgstr "A month ago"
+
+#: .\app\blog\templates\blog.html:117
+msgid "1 il əvvəl"
+msgstr "A year ago"
+
+#: .\templates\base\index\index.html:10
+msgid "AzerMDS - Həkimlər və Təbib Tələbələr İctimai Birliyi"
+msgstr "AzerMDS: Azerbaijan Medical Doctors and Students Association"
+
+#: .\templates\base\index\index.html:11
+msgid ""
+"Azərbaycanda tibb tələbələrinin təhsil həyatını faydalı etməyi hədəfləmiş, "
+"onları yerli və beynəlxalq arenada təmsil edən yeganə təşkilatdıq."
+msgstr ""
+"We are the only organization that aims at making the educational life of "
+"medical students in Azerbaijan more fruitful and represent them at the local "
+"and international level."
+
+#: .\templates\base\index\index.html:45
+msgid "AzerMDS-ə xoş gəldiniz"
+msgstr "Welcome to AzerMDS"
+
+#: .\templates\base\index\index.html:46
+msgid ""
+"Biz yeni bacarıqlar öyrənmək, bilgi yaratmaq və bunu başqalarına öyrətmək "
+"üçün buradayıq"
+msgstr "We are here to learn new skills, to create knowledge and to teach others"
+
+#: .\templates\base\index\index.html:47
+msgid ""
+"Biz ölkəmizdə həyatını yalnız tibbin öyrənilməsinə deyil, həm də cinsi "
+"təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə, "
+"beynəlxalq araşdırmalara, ictimai sağlamlığa, insan hüquqları uğrunda "
+"mübarizəyə həsr etmiş həkimlər yetişdiririk."
+msgstr "We provide our country with doctors who are not only dedicated to the studyof medicine, but also to sex education, to the education of their colleagues, to explore the medicine of other countries, to learn aboutinternational research, to influence public health, to fight for human rights"
+
+#: .\templates\base\index\index.html:48
+msgid "Bizə Qoşul"
+msgstr "Join Us"
+
+#: .\templates\base\index\index.html:49
+msgid "Daha Çox"
+msgstr "Learn More"
+
+#: .\templates\base\index\index.html:65
+msgid "1992-ci ildə əsası qoyulub"
+msgstr "Founded in 1992"
+
+#: .\templates\base\index\index.html:73
+msgid "8000+ tələbəni təmsil edir"
+msgstr "8000+ students"
+
+#: .\templates\base\index\index.html:81
+msgid "120+ ölkəylə əməkdaşlıq edir"
+msgstr "Cooperates with 120+ countries"
+
+#: .\templates\base\index\index.html:95 .\templates\base\layout.html:137
+msgid "Komitələr"
+msgstr "COMMITTEES"
+
+#: .\templates\base\index\index.html:122
+msgid "Tibb Təhsili üzrə Daimi Komitə"
+msgstr "Standing Committee on Medical Education"
+
+#: .\templates\base\index\index.html:125
+msgid ""
+"Tibb Təhsilinin keyfiyyətinin kurrikulumdan kənar tədbirlərlə "
+"yaxşılaşdırılmasını (dəstəklənməsini) hədəfləyir."
+msgstr "This committee aims to improve and support the quality of medical education through non-formal educational activities."
+
+#: .\templates\base\index\index.html:133
+msgid "Peşəkar Mübadilə üzrə Daimi Komitə"
+msgstr "Standing Committee on Professional Exchange"
+
+#: .\templates\base\index\index.html:136
+msgid ""
+"Tibb tələbələri tərəfindən tibb tələbələri üçün təşkil olunan praktiki "
+"bacarıqların təkmilləşməsini və yeni səhiyyə sistemləri ilə tanışlığı "
+"hədəfləyən mübadilə proqramlarını əhatə edir"
+msgstr "This committee covers exchange programs that are organised by medical students for medical students and aim to improve practical skills of medical students and familiarize them with new healthcare systems."
+
+#: .\templates\base\index\index.html:144
+msgid "İctimai Səhiyyə üzrə Daimi Komitə"
+msgstr "Standing Committee on Public Health"
+
+#: .\templates\base\index\index.html:147
+msgid ""
+"Tibb Tələbələrinin İctimai Səhiyyə problemlərinin həllində, maarifləndirmə "
+"işlərində aktiv iştirakını hədəfləyir."
+msgstr "This committee aims to actively involve medical students in public health issues and awareness campaigns."
+
+#: .\templates\base\index\index.html:155
+msgid "Cinsi və Reproduktiv Sağlamlıq və Hüquqlar üzrə Daimi Komitə (bu il aktivləşdirilmişdir)"
+msgstr "Standing Committee on Sexual and Reproductive Health and Rights including HIV and AIDS"
+
+#: .\templates\base\index\index.html:158
+msgid "Bu komitə tibb tələbələrinin cinsi və reproduktiv sağlamlıq, hüquqlar, İİV və QİÇS haqqında maarifləndirmə işlərində aktiv iştirakını hədəfləyir."
+msgstr "This committee targets medical students' active participation in sexual and reproductive health, rights and HIV / AIDS awareness."
+
+#: .\templates\base\index\index.html:166
+msgid "Elmi Mübailə üzrə Daimi Komitə"
+msgstr "Standing Committee on Research Exchange"
+
+#: .\templates\base\index\index.html:169
+msgid ""
+"Bu komitə elmi araşdırma mübadiləsinə fokuslanmışdır və yuxarıdakı ilə eyni "
+"prinsiplə təşkil olunur."
+msgstr "This committee aims to increase scientific research knowledge of medical students by organising research exchange programs."
+
+#: .\templates\base\index\index.html:177
+msgid "İnsan Hüquqları və Sülh üzrə Daimi Komitə"
+msgstr "Standing Committee on Human Rights and Peace"
+
+#: .\templates\base\index\index.html:180
+msgid ""
+"Tələbələrin insan hüquqları və sülhün bərqərar edilməsi ilə bağlı "
+"biliklərini artırmaq və həm  iş şəraitində, həm də gündəlik həyatda insan "
+"hüquqları və etika qaydalarına uyğun hərəkət etmək üçün üsul və bacarıqları "
+"öyrətməyi hədəfləyir."
+msgstr "The committee aims to increase students' knowledge of human rights and peacebuilding and to teach them the knowledge and skills to act in accordance with human rights and courtesy rules, both in the workplace and in everyday life."
+
+#: .\templates\base\index\index.html:202
+msgid "YENİLİKLƏR"
+msgstr "NEWS"
+
+#: .\templates\base\index\index.html:353
+msgid "Mübadilə Programı"
+msgstr "Exchange Program"
+
+#: .\templates\base\index\index.html:354
+msgid "Video üçün şəklə klikləyin"
+msgstr "Click Image For Video"
+
+#: .\templates\base\index\index.html:364
+msgid "Öyrənək"
+msgstr "Let's learn"
+
+#: .\templates\base\index\index.html:374
+msgid "Kəşf edək"
+msgstr "Let's explore"
+
+#: .\templates\base\index\index.html:384
+msgid "Tanış olaq"
+msgstr "Let's get to know"
+
+#: .\templates\base\index\index.html:394
+msgid "Əylənək"
+msgstr "Let's enjoy"
+
+#: .\templates\base\index\index.html:404
+msgid "Gülümsəyək"
+msgstr "Let's smile"
+
+#: .\templates\base\index\index.html:414
+msgid "Mübadilə aparaq"
+msgstr "Let's exchange"
+
+#: .\templates\base\index\index.html:479
+msgid "TEZ-TEZ VERİLƏN SUALLAR"
+msgstr "COMMONLY ASKED QUESTIONS"
+
+#: .\templates\base\index\index.html:490
+msgid "AzerMDS-ə necə üzv ola bilərəm?"
+msgstr "How can I become a member of AzerMDS?"
+
+#: .\templates\base\index\index.html:499
+msgid ""
+"Üzv olmaq üçün AzerMDS üzvlük anketini doldurmaq lazımdır. Bu anket hər ay "
+"üzvlük həftəsi müddətində aktiv olur. Sosial media hesablarımızı izləyərək "
+"hər ay açılan üzvlük həftəmiz barədə xəbər tuta bilərsiniz. Anketi "
+"doldurarkən qarşınıza çıxacaq bütün bəndləri ətraflı doldurmağı, "
+"prezentasiyalarla diqqətlə tanış olmağı tövsiyə edirik. Bu, sizə özünüzə "
+"uyğun üzvlük növünü (aktiv və ya passiv) seçməyə kömək edəcək. Anketin "
+"sonunda təqdim olunan Daxili Davranış Kodeksinə nəzər salırsınız və şərtləri "
+"qəbul edirsiniz. Anketi həm ingiliscə, həm də azərbaycanca doldura "
+"bilərsiniz."
+msgstr "You have to fill out the  AzerMDS membership form to be a member.This form is always active during membership week.You can find out about  monthly membership week by following our social media accounts.During filling out the form we recommend you to fill all items in a detailed manner and to get acquaintance with presentations carefully.It will help you to choose membership type (active or passive ) that suits  you mostly.You have to check Code of Conduct that is introduced to you at the end of form and then accept the terms.You can fill out the form both in English and in Azerbaijan languages"
+
+#: .\templates\base\index\index.html:507
+msgid "AzerMDS-ə qoşulmağın mənə hansı müsbət təsirləri olacaq?"
+msgstr "What positive effects of joining AzerMDS will have for  me?"
+
+#: .\templates\base\index\index.html:516
+msgid ""
+"Bizə qoşulmaqla siz tibbi bilik və bacarıqlarınızı artırmaqla yanaşı qlobal "
+"səhiyyə ilə daha yaxından tanış ola, araşdırma, ünsiyyət və liderlik "
+"bacarıqlarınızı inkişaf etdirə bilərsiniz. Həmçinin özünüz üçün yeni mühit "
+"yarada, dünyanı kəşf edə, milli və beynəlxalq tibbi imkanlara daha yaxın ola "
+"biləcəksiniz. Bununla yanaşı fəal olaraq, tədbirlər, layihələr təşkil "
+"edərək, mövcud tibbi mövzulara mövqe bildirərək və tibb sahəsində şəbəkələr "
+"quraraq hadisələri öz əllərinizə ala biləcəksiniz."
+msgstr "By joining AzerMDS you can enhance not only medical knowledge and skills,but also recognize  global healthcare  systems closely, develop research ,communication, and leadership skills. Also you can create new environment for yourself ,discover the world and be aware of international opportunities In addition to these, by organizing events, projects actively,you may write your own policies related to medical topics  ,also you may create your network in medical field and dominate the issues  related to medicine."
+
+#: .\templates\base\index\index.html:524
+msgid "Üzv olmaq üçün ingilis dili vacibdirmi?"
+msgstr "Is English necessary for becoming a member?"
+
+#: .\templates\base\index\index.html:533
+msgid ""
+"Üzv olmaq üçün ingilis dili bilmək vacib deyil, lakin arzuolunandır. Onu da "
+"qeyd edək ki, İdarə Heyəti və assistent çağırışları zamanı, habelə "
+"beynəlxalq tədbirlərdə iştirak üçün ingilis dili tələb oluna bilər."
+msgstr "To become a member knowing English is not mandatory, but desirable. We would like also to mention that during  call for assistants and Team of Officials ,as well as for participation in international events english may be required."
+
+#: .\templates\base\index\index.html:541
+msgid "AzerMDS-ə aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?"
+msgstr "Will registering as  an active member to AzerMDS create obstacle for my lessons? "
+
+#: .\templates\base\index\index.html:550
+msgid ""
+"AzerMDS tələbələrin tələbələr üçün yaratdığı və yalnız tələbələr tərəfindən "
+"idarə olunan təşkilat olduğuna görə bütün fəaliyyət zamanı dərslərin və "
+"imtahanların mövcudluğu nəzərə alınır. Lakin vaxtın düzgün tənzimlənməsi və "
+"aktiv üzvlüyün öhdəliklərinin yerinə yetirilməsi üzvün fərdi bacarıqlarından "
+"və keyfiyyətindən asılıdır."
+msgstr "Because of AzerMDS was established  by students for students,during activity existence of lessons and exams are taking into consideration.But correct time management and implementing  tasks of active membership depend on individual skills and quality  of member"
+
+#: .\templates\base\index\index.html:558
+msgid "Komitə seçəndə nələrə fikir verməliyəm?"
+msgstr "What things should I pay attention while to choose committee?"
+
+#: .\templates\base\index\index.html:567
+msgid ""
+"İlk növbədə anketdə sizə təqdim olunan üzvlük və daimi komitələrlə bağlı "
+"olan prezentasiyalarla tanış olun. Bu, sizə daimi komitələr haqqında ilk "
+"təəssürat yaratmağa yardım edəcək. Daha sonra sizi maraqlandıran komitələrin "
+"“101” tanışlıq vebinarını Youtube kanalımızda izləməyi tövsiyə edirik. "
+"Həmçinin daimi komitə seçərkən öz bacarıqlarınızın, gələcək planlarınızın və "
+"maraqlarınızın həmin komitə ilə nə qədər uyğun olduğuna da diqqət edin."
+msgstr "First of all be familiar with presentations about memberships and standing committees in registration form.This will help you to have a first impression about standing committees. Afterwards you can watch our \"101\" webinar series about standing committees from youtube channel.Also we recommend you please take into account how much your personal interests,skills and future plans suit with the standing committee that you want to choose"
+
+#: .\templates\base\index\index.html:575
+msgid "Mübadilə Proqramlarına necə qoşulmaq olar?"
+msgstr "How can I join exchange programs?"
+
+#: .\templates\base\index\index.html:584
+msgid ""
+"Bunun üçün hər hansısa bir komitəmizə üzv olmağınıza ehtiyac yoxdur. Sadəcə "
+"olaraq sosial media kanallarımızı izləməniz yetərlidir. Hər il sentyabr-"
+"oktyabr aylarında mübadilə proqramlarına qəbul imtahanı elan olunur. İmtahan "
+"orta ingilis dilində və yaxud gedəcəyiniz ölkənin yerli dilində, təməl tibbi "
+"termin biliklərinizin yoxlanılmasını hədəfləyir. Daha sonra isə "
+"müraciətçilər müsahibəyə dəvət olunur. Qəbul proesesində tələbədən 3 ölkə və "
+"4 şöbə seçməsi tələb olunur. Ölkə seçimi AzerMDS tərəfindən keçirilən "
+"imtahanda tələbələrin topladıqları bala əsasən müəyyənləşdirildiyi halda, "
+"şöbə seçimi qəbul edən ölkənin imkanlarından asılı olaraq onlar tərəfindən "
+"müəyyənləşdirilir."
+msgstr "There is no need to be a member of any committee for this.It is enough to follow our social media accounts.Each year in September -October months entrance  exam for exchange programs is announced .Exam aims  to evaluate your basic medical terminology knowledge in English or native language of  country that you chose.Afterwards applicants are invited to interview.During the admission process it is required to choose 3 countries and 4 departments from students.Country selection is determined by AzerMDS according to score of students during exam, but department choice is determined by the host country depending on its opportunities"
+
+#: .\templates\base\index\index.html:592
+msgid "Mübadilə proqramları ödənişlidirmi?"
+msgstr "Are exchange programs paid?"
+
+#: .\templates\base\index\index.html:601
+msgid ""
+"Mübadilə proqramlarında iştirak edən tələbələr öz yol xərclərini və "
+"mübadilədə iştirak edəcəkləri ölkədən asılı olaraq 300-590 avro arası "
+"iştirak haqqı ödəməlidirlər. Bu məbləğə sizin 1 aylıq təcrübəniz, yaşayış "
+"yeriniz və gündə 1 dəfə qidalanma daxildir. Bəzən qida təmin oluna "
+"bilmədikdə, bu xidmət cib xərcliyi ilə əvəzlənə bilər. Bundan əlavə sizə "
+"həmin ölkədə kömək edəcək əlaqələndirici şəxs və təcrübənizə nəzarət edəcək "
+"tyutor ayrılır. Əksər halarda, proqrama sosial aktivitələr da daxildir."
+msgstr "The students who want to participate in exchange programs should pay their own travel cost and approximately £300-590 participation fee depending on the country that they participate in during exchange. This cost includes your 1 month-long experience during exchange ,accommodation and 1 meal a day.In case you can't be provided with 1 meal a day ,this service can be substituted with pocket money. Additionally, you will be provided with a contact person who will help and guide you, as well as with a tutor who will control your experience during exchange. In most cases programme include social activities as well"
+
+#: .\templates\base\index\index.html:619
+msgid "Bizi izləyin"
+msgstr "FOLLOW US"
+
+#: .\templates\base\layout.html:47
+msgid "Bakıxanov küçəsi 23, Bakı, 370022, Azərbaycan"
+msgstr "23 Bakikhanov Street, Baku, 370022, Azerbaijan"
+
+#: .\templates\base\layout.html:107 .\templates\base\layout.html:121
+msgid "Haqqında"
+msgstr "About"
+
+#: .\templates\base\layout.html:108
+msgid "Tarix"
+msgstr "History"
+
+#: .\templates\base\layout.html:109
+msgid "Yeniliklər"
+msgstr "News"
+
+#: .\templates\base\layout.html:110
+msgid "Qalereya"
+msgstr "Gallery"
+
+#: .\templates\base\layout.html:111
+msgid "Mübadilə Proqramı"
+msgstr "Exchange Program"
+
+#: .\templates\base\layout.html:113
+msgid "Bizə qoşul"
+msgstr "Join us"
+
+#: .\templates\base\layout.html:133
+msgid "Biz kimik"
+msgstr "Who We Are"
+
+#: .\templates\base\layout.html:136
+msgid "Nizamnamə"
+msgstr "Regulation"
+
+#: .\templates\base\layout.html:138
+msgid "Layihələr"
+msgstr "Projects"
+
+#: .\templates\base\layout.html:139
+msgid "Beynəlxalq Təmsilçilik"
+msgstr "External Representation"
+
+#: .\templates\base\layout.html:140
+msgid "İdarə Heyəti"
+msgstr "Team of Officials"
+
+#: .\templates\base\layout.html:141
+msgid "Müşahidə Heyəti"
+msgstr "Observational board"
+
+#: .\templates\base\layout.html:142
+msgid "Məzunlarımız"
+msgstr "Our Alumni"
+
+#: .\templates\base\layout.html:143
+msgid "Əməkdaşlıqlarımız"
+msgstr "Our partnerships"
+
+#: .\templates\base\layout.html:167
+msgid "HAQQIMIZDA"
+msgstr "ABOUT US"
+
+#: .\templates\base\layout.html:168
+msgid ""
+"Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri "
+"Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
+"2007-ci ildən bu federasiyanın tamhüquqlu üzvüyük"
+msgstr "We have functioned within IFMSA (International Federation of Medical Students’ Associations) as a candidate member between the years 2005-2006. We have become a fully fledged member in 2007."
+
+#: .\templates\base\layout.html:169
+msgid "Əlaqə: "
+msgstr "Contact: "
+
+#: .\templates\base\layout.html:184
+msgid "Bütün huquqları qorunur © azermds.org 2020"
+msgstr "All right reserved © azermds.org 2020"
+
+#~ msgid "Related"
+#~ msgstr "Əlaqəli"
+
+#~ msgid "COMMİTTEES"
+#~ msgstr "Komitələr"
+
+#~ msgid "NEWS"
+#~ msgstr "YENİLİKLƏR"
+
+#~ msgid "Click Image For Video"
+#~ msgstr "Video üçün şəkilə klikləyin"
+
+#~ msgid "COMMONLY ASKED QUESTIONS"
+#~ msgstr "TEZ-TEZ VERİLƏN SUALLAR"
+
+#~ msgid "About"
+#~ msgstr "Haqqında"
+
+#~ msgid "History"
+#~ msgstr "Tarix"
+
+#~ msgid "News"
+#~ msgstr "Yeniliklər"
+
+#~ msgid "Gallery"
+#~ msgstr "Qaleriya"
+
+#~ msgid "Who We Are"
+#~ msgstr "Biz kimik"
+
+#~ msgid "Blog"
+#~ msgstr "Bloq"
+
+#~ msgid "ABOUT US"
+#~ msgstr "HAQQIMIZDA"

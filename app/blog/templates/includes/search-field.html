@@ -1,0 +1,22 @@
+{% load i18n %}
+<form action="">
+    <input type="hidden" name="type" value="search">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <select name="category" id="category" class="custom-select text-center search-item rounded-left-0 font-weight-bold font-style pl-2 pr-4 pr-md-4 pl-md-3">
+                    <option value="" class="font-weight-bold font-style">{% trans "Hamısı" %}</option>
+                {% for category in categories %}
+                    <option value="{{category.slug}}" class="font-weight-bold font-style">
+                        {% if languageisaz %}
+                            {{category.title}}
+                        {% else %}
+                            {{category.title_english}}      
+                        {% endif %}
+                    </option>
+                {% endfor %}
+            </select>
+        </div>
+        <input id="search-input" type="text" name="value" class="form-control search-item border-dark" placeholder="Search">
+        <button id="search-button" type="submit" class="search-item px-3 bg-dark text-white roundend-left-0"><i class="fas fa-search fa-lg"></i></button>
+    </div>
+</form>

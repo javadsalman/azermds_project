@@ -1,0 +1,144 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% load i18n %}
+{% load custom_filter %}
+
+
+{% block metas %}
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta property="og:url"           content="https://azermds.org{{request.get_full_path}}"/>
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="{{article.get_title}}" />
+	<meta property="og:description"   content="{{article.get_content|truncatecontent:150}}" />
+	<meta property="og:image"         content="{{article.main_image.url}}" />
+	<meta name="title" content="{{article.get_title}}">
+	<meta name="description" content="{{article.get_content|truncatecontent:150}}">
+
+
+{% endblock metas %}
+
+
+
+{% block title %}
+	<title>{{article.get_title}}</title>
+{% endblock title %}
+
+
+{% block links %}
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock links %}
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+{% block body %}
+	<!-- Header -->
+	<header id="header font-style">
+		<!-- Page Header -->
+		<div id="post-header" class="page-header">
+			{% if article.cover_image %}
+				<div class="background-img" style="background-image: url('{{article.cover_image.url}}');"></div>
+			{% else %}
+				<div class="background-img" style="background-image: url('{% static 'images/background-doctor.jpg' %}');"></div>
+			{% endif %}
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="post-meta">
+							<a class="post-category cat-2" href="{% url 'blog' %}?type=category&value={{article.category.slug}}">
+							{{article.category.get_title}}
+							</a>
+							<time class="post-date">{{article.pub_date|date:'j F Y'}}</time>   
+						</div>
+						<h1>
+						{{article.get_title}}
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Page Header -->
+	</header>
+	<!-- /Header -->
+
+	<!-- section -->
+	<main class="section font-style">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- Post content -->
+				<div class="col-md-8">
+					<div class="section-row sticky-container">
+						<article class="main-post">
+							{{article.get_content|safe}}
+						</article>
+
+						{% comment %} <div class="fb-share-button" data-href="https://azermds.org{{request.get_full_path}}"></div> {% endcomment %}
+						
+						<div id="share-section" class="post-shares sticky-shares">
+							<a id="fb-share-button" class="share-facebook" cursor="pointer"><i class="fab fa-facebook-f"></i></a>
+							<a id="twitter-share-button" class="share-twitter"><i class="fab fa-twitter"></i></a>
+							<a id="whatsapp-share-button" class="share-whatsapp font-weight-bold"><i class="fab fa-whatsapp fa-lg"></i></a>
+							<a id="linkedin-share-button" class="share-linkedin"><i class="fab fa-linkedin-in"></i></a>
+							<a id="mail-share"><i class="fa fa-envelope"></i></a>
+							<a id="copy-url" data-toggle="tooltip" data-placement="bottom" title="Copied" data-trigger="click"><i class="fas fa-link"></i></a>
+						</div>
+						
+					</div>
+				</div>
+				<!-- /Post content -->
+
+				<!-- aside -->
+				<aside class="col-md-4">
+
+					<!-- post widget -->
+					<div class="aside-widget">
+						<div class="section-title">
+							<h2>{% trans "Əlaqəli" %}</h2>
+						</div>
+
+						{% for related_article in article.category.article_set.all|slice:':7' %}
+							{% if related_article.id != article.id %}
+								<div class="post post-widget">
+									<figure>
+										<a class="post-img" href="{% url 'article' related_article.pk related_article.slug %}"><img src="{{related_article.thumbnail.url }}" alt="related post"></a>
+									</figure>
+									<div class="post-body">
+										<h3 class="post-title"><a href="{% url 'article' related_article.pk related_article.slug %}">
+											{{related_article.get_title}}
+										</a></h3>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div>
+					<!-- /post widget -->
+				</aside>
+				<!-- /aside -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+		<div class="text-right footer-copyright">
+			This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" class="text-secondary" target="_blank">Colorlib</a>
+		</div>
+	</main>
+	<!-- /section -->
+
+{% endblock body %}
+
+
+
+{% block scripts %}
+	<script src="{% static 'js/main.js' %}"></script>
+	<script src="{% static 'js/article.js' %}"></script>
+{% endblock scripts %}

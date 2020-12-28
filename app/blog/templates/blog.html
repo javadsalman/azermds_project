@@ -1,0 +1,138 @@
+{% extends 'base/layout.html' %}
+{% load static %}
+{% load i18n %}
+{% load custom_filter %}   
+
+{% block metas %}
+<meta name="title" content="{% trans "AzerMDS Bloq - Yeni məqalələrlə yeni biliklər və fürsətlər" %}">
+<meta name="description" content="{% trans "AzerMDS ilə bağlı hər şeyi bloqumuzdan öyrənə bilərsiz. Ən son yenilik və imkanlar barədə sizi məlumatlandırmaq üçün ən yeni məqalələri sizinlə bölüşürük." %}">
+{% endblock metas %}
+
+{% block title %}
+	<title>{% trans "AzerMDS Bloq - Yeni məqalələrlə yeni biliklər və fürsətlər" %}</title>
+{% endblock title %}
+
+
+{% block links %}
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'css/custom.css' %}">
+{% endblock links %}
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+{% block body %}
+	<!-- Page Header -->
+			<div class="page-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10">
+							<ul class="page-header-breadcrumb">
+								<li><a href="{% url 'index' %}">{% trans "Ana Səhifə" %}</a></li>
+								<li>{% trans "Bloq" %}</li>
+							</ul>
+							<h1>{% trans "Bloq" %}</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header -->
+		</header>
+		<!-- /Header -->
+		
+		<!-- section -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<main class="col-lg-8">
+						<div class="row">
+							<section id="search-bar" class="col-12 mb-3">
+								{% include 'includes/search-field.html' %}
+							</section>
+							{% if articles %}
+								{% include 'includes/post.html' %}
+								<div class="col-lg-12">
+									{% include 'includes/pagination.html' %}
+								</div>
+							{% else %}
+								<div>
+									<p class="pl-3 pb-5 h2 font-weight-light">{% trans "Heç bir nəticə tapılmadı! :" %}(</p>
+								</div>
+							{% endif %}
+						</div>
+					</main>
+					
+					<aside class="col-lg-4">
+						
+						<!-- catagories -->
+						<section class="aside-widget">
+							<div class="section-title">
+								<h2>{% trans "Kategoriyalar" %}</h2>
+							</div>
+							<div class="category-widget">
+								<ul>
+										<li>
+											<a href="{% url 'blog' %}">
+												{% trans "Hamısı" %}
+												<span>{{all_category_count}}</span>
+											</a>
+										</li>
+									{% for category in categories %}
+										<li>
+											<a href="{% url 'blog' %}?{%new_query request type='category' value=category.slug page=1%}">
+												{{category.get_title}}
+												<span>{{category.article__count}}</span>
+											</a>
+										</li>
+									{% endfor %}
+									
+								</ul>
+							</div>
+						</section>
+						<!-- /catagories -->
+						
+				
+						
+						<!-- archive -->
+						<section class="aside-widget">
+							<div class="section-title">
+								<h2>{% trans "Arxiv" %}</h2>
+							</div>
+							<div class="archive-widget">
+								<ul>
+									<li><a href="{% url 'blog' %}?{% new_query request type='date' value='today' page=1%}">{% trans "Bu gün" %}</a></li>
+									<li><a href="{% url 'blog' %}?{% new_query request type='date' value='yesterday' page=1%}">{% trans "Dünən" %}</a></li>
+									<li><a href="{% url 'blog' %}?{% new_query request type='date' value='a_week_ago' page=1%}">{% trans "1 həftə əvvəl" %}</a></li>
+									<li><a href="{% url 'blog' %}?{% new_query request type='date' value='a_month_ago' page=1%}">{% trans "1 ay əvvəl" %}</a></li>
+									<li><a href="{% url 'blog' %}?{% new_query request type='date' value='a_year_ago' page=1%}">{% trans "1 il əvvəl" %}</a></li>
+								</ul>
+							</div>
+						</section>
+						<!-- /archive -->
+					</aside>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /section -->
+		<div class="text-right footer-copyright">
+			This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" class="text-secondary" target="_blank">Colorlib</a>
+		</div>
+{% endblock body %}
+
+
+
+{% block scripts %}
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock scripts %}

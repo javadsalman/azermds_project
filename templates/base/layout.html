@@ -1,0 +1,200 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+{%get_current_language as current_language%}
+<html lang="{{current_language}}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tibb tələbəsi, mübadilə programı, exchange program, scome, scope, scoph, scora, score, scorp, xaricdə praktika">
+    {% block title %}
+    {% endblock title %}
+    {% block metas %}
+    {% endblock metas %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=EB+Garamond:wght@400;600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'base/index/images/favicon.png' %}" sizes="32x32">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link text="text/css" rel="stylesheet" href="{% static 'base/libraries/css/layout.css' %}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177846316-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177846316-1');
+    </script>
+
+    
+    {% block links %}
+    {% endblock links %}
+
+    {% block styles %}
+    {% endblock styles %}
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-dark px-2 clearfix">
+        <!-- contact -->
+        <span id="header-contact" class="float-left pb-1" style="padding-top: 3px;">
+            <a tabindex="0" class="ml-2 mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
+            23 Bakikhanov Street, Baku, 370022, Azerbaijan">
+                <i class="fas fa-map-marker-alt"></i>
+            </a>
+            
+            <span class="mr-2 d-none d-md-inline">{% trans "Bakıxanov küçəsi 23, Bakı, 370022, Azərbaycan" %}</span>
+
+            <a tabindex="0" class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
+            +994-12-95-35-66 | +994 12 95-48-36">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <span class="mr-2 d-none d-md-inline">+994 12 95-35-66 +994 12 95-48-36</span>
+
+            <a tabindex="0"  class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
+            info@azermds.org">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <span class="mr-2 d-none d-md-inline">office.azermds@gmail.com</span>
+        </span>
+
+        <!-- language selecting -->
+        <span class="float-right dropleft pt-1">
+            {%get_available_languages as languages_obj%}
+            {%get_language_info_list for languages_obj as languages%}
+            <form id="language-form" class="text-right bg-dark" style="font-weight: 600;" action="{% url 'set_language' %}" method="post">   
+	                <i class="fas fa-globe text-white"></i>
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value={{request.get_full_path}}>   
+                    <select name="language" id="language-selection" class="rounded bg-dark text-white border-0"
+                    style="outline: none; cursor: pointer;">
+                    {% for language in languages %}
+                        <option value="{{language.code}}" {% if current_language == language.code %}selected{% endif %}>
+                            {{language.code|upper}}
+                        </option>
+                    {% endfor %}
+                    </select>
+                    
+            </form>
+        </span>
+        
+    </header>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-0 border-bottom" style="opacity: 0.9;">
+        <figure class="m-0">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'base/index/images/azermds-1.png' %}" style="object-fit: fill" width="120" alt="AzerMDS vertical logo">
+            </a>
+        </figure>      
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-size: 18px;">
+                
+
+                <li class="nav-item active dropdown text-center">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <span class="mdsblue fw-500">AzerMDS</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
+                    </a>
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
+                        <a class="dropdown-item" href="#">{% trans "Haqqında" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Tarix" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Yeniliklər" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Qalereya" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Mübadilə Proqramı" %}</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled" href="#">{% trans "Bizə qoşul" %}</a>
+                    </div>
+                </li>
+                <li class="nav-item active dropdown text-center">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mdsblue fw-500">IFMSA</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
+                    </a>
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
+                        <a class="dropdown-item" href="#">{% trans "Haqqında" %}</a>
+                        <a class="dropdown-item" href="#">SCOME</a>
+                        <a class="dropdown-item" href="#">SCOPE</a>
+                        <a class="dropdown-item" href="#">SCOPH</a>
+                        <a class="dropdown-item" href="#">SCORA</a>
+                        <a class="dropdown-item" href="#">SCORE</a>
+                        <a class="dropdown-item" href="#">SCORP</a>
+
+                    </div>
+                </li>
+                <li class="nav-item active dropdown text-center">
+                    <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mdsblue fw-500" style="word-spacing: -2.5px;">{% trans "Biz kimik" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
+                    </a>
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
+                        <a class="dropdown-item" href="#">{% trans "Nizamnamə" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Komitələr" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Layihələr" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Beynəlxalq Təmsilçilik" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "İdarə Heyəti" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Müşahidə Heyəti" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Məzunlarımız" %}</a>
+                        <a class="dropdown-item" href="#">{% trans "Əməkdaşlıqlarımız" %}</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active text-center">
+                    <a class="nav-link text-dark nav-name" href="{% url 'blog' %}">
+                       <span class="mdsblue fw-500" style="word-spacing: -2.5px;">{% trans "Bloq" %}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    {% block body %}
+    {% endblock body %}
+
+
+    <!-- footer -->
+    <footer>
+        <section class="bg-dark pb-4 py-lg-4 pb-lg-2 px-4 row w-100 m-0">
+            <figure class="col-8 offset-2 col-lg-3 offset-lg-0 pt-5 ml-lg-3 footer-border">
+                <img src="{% static 'base/index/images/azermds-mobile.png' %}" class="w-100" alt="AzerMDS Logo">
+            </figure>
+            <article class="col-10 offset-1 pt-4 pb-lg-5 text-center col-lg-5 ml-lg-2 footer-border">
+                <p class="h5 text-white font-quicksand pb-1">{% trans "HAQQIMIZDA" %}</p>
+                <p class="text-white">{% trans "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. 2007-ci ildən bu federasiyanın tamhüquqlu üzvüyük" %}</p>
+                <p class="text-white">{% trans "Əlaqə: " %}<span class="text-info ml-1">office.azermds@gmail.com</span></p>
+            </article>
+            <div class="col-12 pt-0 pt-sm-4 pt-lg-4 col-lg-3 offset-1 offset-sm-0 ml-sm-2 ml-md-4 mx-lg-auto footer-border">
+                <div class="row">
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-0"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scome&page=1"><img src="{% static 'base/index/images/scome_footer.png'%}" width="60" height="65" alt="scome"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-0"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scope&page=1"><img src="{% static 'base/index/images/scope_footer.png'%}" width="60" height="65" alt="scope"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-0"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scoph&page=1"><img src="{% static 'base/index/images/scoph_footer.png'%}" width="60" height="65" alt="scoph"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scora&page=1"><img src="{% static 'base/index/images/scora_footer.png'%}" width="60" height="65" alt="scora"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=score&page=1"><img src="{% static 'base/index/images/score_footer.png'%}" width="60" height="65" alt="score"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scorp&page=1"><img src="{% static 'base/index/images/scorp_footer.png'%}" width="60" height="65" alt="scorp"></a></figure>
+                </div>
+            </div>
+        </section>
+        <!-- copyright -->
+        <section class="text-left pl-2 text-md-center pl-md-0 text-white py-1 font-weight-light w-100 position-relative" style="background-color: black; font-size: 13px; word-spacing: 2px">
+            <span>{% trans "Bütün huquqları qorunur © azermds.org 2020" %}</span>
+            <span class="position-absolute font-italic" style="right: 10px;">Created by <span class="font-weight-bold">Cavad Salman</span></span>
+        </section>
+    </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="{% static 'base/libraries/js/layout.js' %}"></script>
+        
+        {% block scripts %}
+        {% endblock scripts %}
+
+</body>
+</html>

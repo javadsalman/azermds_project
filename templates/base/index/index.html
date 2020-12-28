@@ -1,0 +1,638 @@
+{% extends 'base/layout.html' %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% load custom_filter %}
+
+{% block metas %}
+    <meta name="title" content="{% trans "AzerMDS - Həkimlər və Təbib Tələbələr İctimai Birliyi" %}">
+    <meta name="description" content="{% trans "Azərbaycanda tibb tələbələrinin təhsil həyatını faydalı etməyi hədəfləmiş, onları yerli və beynəlxalq arenada təmsil edən yeganə təşkilatdıq." %}">
+    <meta name="theme-color" content="#f8f9fa">
+{% endblock metas %}
+
+
+{% block title %}
+    <title>AzerMDS - Azərbaycan Həkimlər və Təbib Tələbələr İctimai Birliyi</title>
+{% endblock title %}
+
+{% block links %}
+    <link rel="stylesheet" href="{% static 'base/index/css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+{% endblock links %}
+
+
+
+
+
+{% block body %}
+
+    <main>
+
+
+    <!-- jumbotron -->
+    <section id="jumbotron" class="row w-100 m-0" style="font-size: 40px;">
+        <!-- image -->
+        <figure class="col px-0 pt-5 pt-sm-4 pt-md-5 d-none d-md-block m-0" data-aos="fade-up">
+            <img id="doctor-image" src="{% static 'base/index/images/docc.png' %}" width="90%" alt="">
+        </figure>
+
+        <!-- text -->
+        <div class="col text-white py-4 pb-sm-0 pt-md-4 pt-lg-5 text-center text-md-left" data-aos="fade-up">
+            <div class="row">
+                <article class="col pl-xl-0 pb-xl-1 pt-md-4 pt-lg-3 pb-3 pb-md-0">
+                    <h1 id="jumbo-h1" class="font-quicksand pt-lg-3 pb-md-2 pt-xl-5">{% trans "AzerMDS-ə xoş gəldiniz" %}</h1>
+                    <h2 id="jumbo-h2" class="font-weight-bold pb-2 pb-lg-4">{% trans "Biz yeni bacarıqlar öyrənmək, bilgi yaratmaq və bunu başqalarına öyrətmək üçün buradayıq" %}</h2>
+                    <p id="jumbo-p" class="py-lg-0 py-xl-1" style="line-height: 22px;">{% trans "Biz ölkəmizdə həyatını yalnız tibbin öyrənilməsinə deyil, həm də cinsi təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə, beynəlxalq araşdırmalara, ictimai sağlamlığa, insan hüquqları uğrunda mübarizəyə həsr etmiş həkimlər yetişdiririk." %}</p>
+                    <a id="login-button" href="#" style="background-color: white;" class="btn px-4 px-lg-5 button-round font-quicksand font-weight-bold ml-md-3 mr-3">{% trans "Bizə Qoşul" %}</a>
+                    <a id="register-button" href="#" class="btn px-4 px-lg-5 button-round font-quicksand font-weight-bold">{% trans "Daha Çox" %}</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- statistics -->
+    <section class="row py-5 text-center w-100 m-0 shadw-bottom-lg" style="background: linear-gradient(to bottom, rgba(255,255,255,1) 38%,rgba(242,242,242,1) 100%);">
+        <div class="col-12 col-md-4 sblue pb-5 pb-lg-0">
+            <div>
+                <i class="fas fa-calendar-alt fa-4x"></i>
+            </div>
+            <p class="font-quicksand pt-3 font-weight-bold px-1 statistic-text">
+                {% trans "1992-ci ildə əsası qoyulub" %}
+            </p>
+        </div>
+        <div class="col-12 col-md-4 sblue pb-5 pb-lg-0">
+            <div>
+                <i class="fas fa-users fa-4x"></i>
+            </div>
+            <p class="font-quicksand pt-3 font-weight-bold px-1 statistic-text">
+                {% trans "8000+ tələbəni təmsil edir" %}
+            </p>
+        </div>
+        <div class="col-12 col-md-4 sblue pb-0 pb-lg-0">
+            <div>
+                <i class="fas fa-globe-europe fa-4x"></i>
+            </div>
+            <p class="font-quicksand pt-3 font-weight-bold px-1 statistic-text">
+                {% trans "120+ ölkəylə əməkdaşlıq edir" %}
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- committes -->
+    <section class="bg-light pt-5">
+        <div class="container">
+
+            <div class="row" data-aos="fade-down">
+                <div class="col">
+                    <br>
+                    <h2 class="display-4 text-center font-coiny text-dark mobile-entry-size">{% trans "Komitələr" %}<br>
+                    </h2>
+                </div>
+            </div>
+            
+            <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-right">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark font-garamond h5 mb-0 commitee-name px-1 px-sm-3" id="home-tab" data-toggle="tab" href="#scome" role="tab" aria-controls="home" aria-selected="true">SCOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="profile-tab" data-toggle="tab" href="#scope" role="tab" aria-controls="profile" aria-selected="false">SCOPE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#scoph" role="tab" aria-controls="contact" aria-selected="false">SCOPH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#scora" role="tab" aria-controls="contact" aria-selected="false">SCORA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#score" role="tab" aria-controls="contact" aria-selected="false">SCORE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#scorp" role="tab" aria-controls="contact" aria-selected="false">SCORP</a>
+                </li>
+            </ul>
+            <div class="tab-content border border-top-0 bg-white p-4 mb-4 rounded-bottom rounded-right shadow" id="myTabContent" data-aos="fade-up">
+                <article class="tab-pane fade show active" id="scome" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="text-center h5">{% trans "Tibb Təhsili üzrə Daimi Komitə"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-md-3">
+                            <br> {% trans "Tibb Təhsilinin keyfiyyətinin kurrikulumdan kənar tədbirlərlə yaxşılaşdırılmasını (dəstəklənməsini) hədəfləyir." %}
+                        </p>
+                        <figure class="col-12 col-lg-4 pl-lg-0 text-center pt-md-3">
+                            <img src="{% static 'base/index/images/scome.png' %}" height="130px" alt="SCOME">
+                        </figure>
+                    </div>
+                </article>
+                <article class="tab-pane fade" id="scope" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="text-center h5">{% trans "Peşəkar Mübadilə üzrə Daimi Komitə"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-3">
+                            <br> {% trans "Tibb tələbələri tərəfindən tibb tələbələri üçün təşkil olunan praktiki bacarıqların təkmilləşməsini və yeni səhiyyə sistemləri ilə tanışlığı hədəfləyən mübadilə proqramlarını əhatə edir" %}
+                        </p>
+                        <figure class="col-12 col-lg-4 pl-lg-0 text-center pt-lg-3">
+                            <img src="{% static 'base/index/images/scope.png' %}" height="130px" alt="SCOPE">
+                        </figure>
+                    </div>
+                </article>
+                <article class="tab-pane fade" id="scoph" role="tabpanel" aria-labelledby="contact-tab">
+                    <h3 class="text-center h5">{% trans "İctimai Səhiyyə üzrə Daimi Komitə"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-3">
+                            <br> {% trans "Tibb Tələbələrinin İctimai Səhiyyə problemlərinin həllində, maarifləndirmə işlərində aktiv iştirakını hədəfləyir." %}
+                        </p>
+                        <figure class="col-12 col-lg-4 pl-lg-0 text-center pt-lg-3">
+                            <img src="{% static 'base/index/images/scoph.png' %}" height="130px" alt="SCOPH">
+                        </figure>
+                    </div>
+                </article>
+                <article class="tab-pane fade" id="scora" role="tabpanel" aria-labelledby="contact-tab">
+                    <h3 class="text-center h5">{% trans "Cinsi və Reproduktiv Sağlamlıq və Hüquqlar üzrə Daimi Komitə (bu il aktivləşdirilmişdir)"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-3">
+                            <br> {% trans "Bu komitə tibb tələbələrinin cinsi və reproduktiv sağlamlıq, hüquqlar, İİV və QİÇS haqqında maarifləndirmə işlərində aktiv iştirakını hədəfləyir." %}
+                        </p>
+                        <figure class="col-12 col-lg-4 pl-lg-0 text-center pt-lg-3">
+                            <img src="{% static 'base/index/images/scora.png' %}" height="130px" alt="SCORA">
+                        </figure>
+                    </div>
+                </article>
+                <article class="tab-pane fade" id="score" role="tabpanel" aria-labelledby="contact-tab">
+                    <h3 class="text-center h5">{% trans "Elmi Mübailə üzrə Daimi Komitə"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-3">
+                            <br> {% trans "Bu komitə elmi araşdırma mübadiləsinə fokuslanmışdır və yuxarıdakı ilə eyni prinsiplə təşkil olunur." %}
+                        </p>
+                        <figure class="col-12 col-lg-4 pl-lg-0 text-center pt-lg-3">
+                            <img src="{% static 'base/index/images/score.png' %}" height="130px" alt="SCORE">
+                        </figure>
+                    </div>
+                </article>
+                <article class="tab-pane fade" id="scorp" role="tabpanel" aria-labelledby="contact-tab">
+                    <h3 class="text-center h5">{% trans "İnsan Hüquqları və Sülh üzrə Daimi Komitə"%}</h3>
+                    <div class="row">
+                        <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-2 pb-4 pb-lg-5">
+                            <br>  {% trans "Tələbələrin insan hüquqları və sülhün bərqərar edilməsi ilə bağlı biliklərini artırmaq və həm  iş şəraitində, həm də gündəlik həyatda insan hüquqları və etika qaydalarına uyğun hərəkət etmək üçün üsul və bacarıqları öyrətməyi hədəfləyir." %}
+                        </p>
+                        <figure class="col-10 offset-1 offset-lg-0 col-lg-4 pl-lg-0 text-center pt-lg-5">
+                            <img src="{% static 'base/index/images/scorp.png' %}" width="70%" height="80px" alt="SCORP">
+                        </figure>
+                    </div>
+                </article>
+            </div>
+
+            <hr class="w-75 mx-auto mb-0 pb-5" style="margin-top: 60px;">
+            
+        </div>
+    </section>
+    
+{% comment %} 
+    <!-- news -->
+    <section class="pb-5 position-relative">
+        {%get_current_language as language%}
+        <div class="row bg-dark px-2 py-3 w-100 m-0"
+        style="border-top: 25px dashed #f8f9fa; margin-top:">
+
+            <p class="col-12 text-center font-garamond display-4 font-weight-bold mb-2">
+                <a href="{% url 'blog' %}?type=category&value=yenilikler" class="text-white">{% trans "YENİLİKLƏR" %}</a>
+            </p>
+            <div class="col-12 col-md-4 bg-white pb-2 border border-dark card-border">
+                <figure class="row">
+                    <a href="{% url 'article' articles.0.id articles.0.slug %}" class="col p-0 aspect-ratio-box article-image-div">
+                        <img src="/media/{{articles.0.main_image}}" class="w-100 article-image"
+                            alt="{% if language == 'az' %}
+                                    {{articles.0.title}}
+                                {% else %}
+                                    {{articles.0.title_english}}
+                                {% endif %}">         
+                    </a>   
+                    </a>
+                </figure>
+                <div class="row mt-2">
+                    <a href="{% url 'article' articles.0.id articles.0.slug %}" class="col font-nunito h5 text-black">
+                        {% if language == 'az' %}
+                            {{articles.0.title}}
+                        {% else %}
+                            {{articles.0.title_english}}
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="font-nunito">
+                            {% if language == 'az' %}
+                                {{articles.0.content|truncatecontent:150}}
+                            {% else %}
+                                {{articles.0.content_english|truncatecontent:150}}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                        <a href="{% url 'blog' %}?type=category&value=yenilikler" class="btn button-round blue-green-gradient text-white font-weight-bold py-1">
+                            NEWS
+                        </a>
+                        <time class="text-dark font-quicksand d-inline-block">
+                            {{ articles.0.pub_date|date:'j F Y' }}
+                        </time>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 bg-white pb-2 border border-dark card-border">
+                <figure class="row">
+                    <a href="{% url 'article' articles.1.id articles.1.slug %}" class="col p-0 aspect-ratio-box article-image-div">
+                        <img src="/media/{{articles.1.main_image}}" class="w-100 article-image"
+                            alt="{% if language == 'az' %}
+                                    {{articles.1.title}}
+                                {% else %}
+                                    {{articles.1.title_english}}
+                                {% endif %}">         
+                    </a>
+                </figure>
+                <div class="row mt-2">
+                    <a href="{% url 'article' articles.1.id articles.1.slug %}" class="col font-nunito h5 text-black">
+                        {% if language == 'az' %}
+                            {{articles.1.title}}
+                        {% else %}
+                            {{articles.1.title_english}}
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="font-nunito">
+                            {% if language == 'az' %}
+                                {{articles.1.content|truncatecontent:150}}
+                            {% else %}
+                                {{articles.1.content_english|truncatecontent:150}}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                        <a href="{% url 'blog' %}?type=category&value=yenilikler" class="btn button-round blue-green-gradient text-white font-weight-bold py-1">
+                            NEWS
+                        </a>
+                        <time class="text-dark font-quicksand d-inline-block">
+                            {{ articles.1.pub_date|date:'j F Y' }}
+                        </time>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-12 col-md-4 bg-white pb-2 border border-dark card-border">
+                <figure class="row">
+                    <a href="{% url 'article' articles.2.id articles.2.slug %}" class="col p-0 aspect-ratio-box article-image-div">
+                        <img src="/media/{{articles.2.main_image}}" class="w-100 article-image" 
+                            alt="{% if language == 'az' %}
+                                    {{articles.2.title}}
+                                {% else %}
+                                    {{articles.2.title_english}}
+                                {% endif %}">     
+                    </a>
+                </figure>
+                <div class="row mt-2">
+                    <a href="{% url 'article' articles.2.id articles.2.slug %}" class="col font-nunito h5 text-black">
+                        {% if language == 'az' %}
+                            {{articles.2.title}}
+                        {% else %}
+                            {{articles.2.title_english}}
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="font-nunito">
+                            {% if language == 'az' %}
+                                {{articles.2.content|truncatecontent:150}}
+                            {% else %}
+                                {{articles.2.content_english|truncatecontent:150}}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                        <a href="{% url 'blog' %}?type=category&value=yenilikler" class="btn button-round blue-green-gradient text-white font-weight-bold py-1">
+                            NEWS
+                        </a>
+                        <time class="text-dark font-quicksand d-inline-block">
+                            {{ articles.2.pub_date|date:'j F Y' }}
+                        </time>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+{% endcomment %}
+
+    
+    
+    
+    <!-- exchange program -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row mb-4" >
+                <div class="col">
+                    <br>
+                        <h2 class="d-block h1 font-weight-bold text-center font-quicksand text-dark">{% trans "Mübadilə Programı" %}</h2>
+                        <span class="d-block h6 text-center font-quicksand text-dark">({% trans "Video üçün şəklə klikləyin" %})</span>
+                </div>
+            </div>
+            <div class="row text-center font-quicksand font-weight-bold text-dark">
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1vJsy0LuS-M" data-toggle="modal" data-target="#modal1">
+                            <img src="https://pbs.twimg.com/profile_images/1224653975938654208/BjxoH-Av_400x400.jpg" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Öyrənək" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1bvx0nj8TCs" data-toggle="modal" data-target="#modal1">
+                            <img src="https://cf.kizlarsoruyor.com/q12116349/150790c0-7c25-481a-9547-003cd8458fa7-m.jpg" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Kəşf edək" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/TW3JU-hlKns" data-toggle="modal" data-target="#modal1">
+                            <img src="https://i1.sndcdn.com/artworks-000304964559-ghfp48-t500x500.jpg" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Tanış olaq" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/TA6y-oRT1w0" data-toggle="modal" data-target="#modal1">
+                            <img src="https://i1.sndcdn.com/artworks-000540005223-eokgo8-t500x500.jpg" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Əylənək" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1IYejfWvRk0" data-toggle="modal" data-target="#modal1">
+                            <img src="https://i.ytimg.com/vi/w5_0ZOz35Qk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCY4eSa-2lHjDI_dB95FyL2Wqygkw" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Gülümsəyək" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                    <figure class="card shadow-sm">
+                        <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/5k2FyUmrwNY" data-toggle="modal" data-target="#modal1">
+                            <img src="https://i.ytimg.com/vi/i_xyJAqdtoY/maxresdefault.jpg" class="card-img-top" alt="exchange program">
+                        </div>
+                        <figcaption class="card-body p-1">
+                          <p class="card-text">{% trans "Mübadilə aparaq" %}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+        
+            <!-- Button trigger modal -->
+            <div class="container">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+
+                                <!--Content-->
+                                <div class="modal-content">
+
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0">
+
+                                        <div id="video-div" class="embed-responsive embed-responsive-16by9 z-depth-1-half" role="status">
+                                           <span class="sr-only">Loading...</span>
+                                        </div>
+
+                                    </div>
+
+                                    
+                                </div>
+                                <!--/.Content-->
+
+                            </div>
+
+                        </div>
+                        <!--Modal: Name-->
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+
+        
+        </div>
+    </section>
+    
+
+
+
+    <!-- commonly asked -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row mb-3" >
+                <div class="col">
+                    <br>
+                    <h2 id="faq-title" class="h1 text-center font-quicksand text-dark font-weight-bold" data-aos="fade-up">
+                        {% trans "TEZ-TEZ VERİLƏN SUALLAR" %}
+                    </h2>
+                </div>
+            </div>
+        
+            <div class="row pb-5">
+                <div class="col">
+                    <div class="accordion shadow" id="accordionQuestion">
+                        <div class="card" data-aos="fade-left" data-aos-delay="50">
+                            <button id="heading1" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "AzerMDS-ə necə üzv ola bilərəm?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow1" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionQuestion" data-target="#arrow1">
+                                <article class="card-body">
+                                {% trans "Üzv olmaq üçün AzerMDS üzvlük anketini doldurmaq lazımdır. Bu anket hər ay üzvlük həftəsi müddətində aktiv olur. Sosial media hesablarımızı izləyərək hər ay açılan üzvlük həftəmiz barədə xəbər tuta bilərsiniz. Anketi doldurarkən qarşınıza çıxacaq bütün bəndləri ətraflı doldurmağı, prezentasiyalarla diqqətlə tanış olmağı tövsiyə edirik. Bu, sizə özünüzə uyğun üzvlük növünü (aktiv və ya passiv) seçməyə kömək edəcək. Anketin sonunda təqdim olunan Daxili Davranış Kodeksinə nəzər salırsınız və şərtləri qəbul edirsiniz. Anketi həm ingiliscə, həm də azərbaycanca doldura bilərsiniz." %}
+                                </article>
+                            </div>
+                        </div>
+        
+                        <div class="card" data-aos="fade-right" data-aos-delay="100">
+                            <button id="heading2" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "AzerMDS-ə qoşulmağın mənə hansı müsbət təsirləri olacaq?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow2" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionQuestion" data-target="#arrow2">
+                                <article class="card-body">
+                                {% trans "Bizə qoşulmaqla siz tibbi bilik və bacarıqlarınızı artırmaqla yanaşı qlobal səhiyyə ilə daha yaxından tanış ola, araşdırma, ünsiyyət və liderlik bacarıqlarınızı inkişaf etdirə bilərsiniz. Həmçinin özünüz üçün yeni mühit yarada, dünyanı kəşf edə, milli və beynəlxalq tibbi imkanlara daha yaxın ola biləcəksiniz. Bununla yanaşı fəal olaraq, tədbirlər, layihələr təşkil edərək, mövcud tibbi mövzulara mövqe bildirərək və tibb sahəsində şəbəkələr quraraq hadisələri öz əllərinizə ala biləcəksiniz." %}
+                                </article>
+                            </div>
+                        </div>
+        
+                        <div class="card" data-aos="fade-left" data-aos-delay="150">
+                            <button id="heading3" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "Üzv olmaq üçün ingilis dili vacibdirmi?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow3" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionQuestion" data-target="#arrow3">
+                                <article class="card-body">
+                                {% trans "Üzv olmaq üçün ingilis dili bilmək vacib deyil, lakin arzuolunandır. Onu da qeyd edək ki, İdarə Heyəti və assistent çağırışları zamanı, habelə beynəlxalq tədbirlərdə iştirak üçün ingilis dili tələb oluna bilər." %}
+                                </article>
+                            </div>
+                        </div>
+        
+                        <div class="card" data-aos="fade-right" data-aos-delay="200">
+                            <button id="heading4" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "AzerMDS-ə aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow4" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionQuestion" data-target="#arrow4">
+                                <article class="card-body">
+                                {% trans "AzerMDS tələbələrin tələbələr üçün yaratdığı və yalnız tələbələr tərəfindən idarə olunan təşkilat olduğuna görə bütün fəaliyyət zamanı dərslərin və imtahanların mövcudluğu nəzərə alınır. Lakin vaxtın düzgün tənzimlənməsi və aktiv üzvlüyün öhdəliklərinin yerinə yetirilməsi üzvün fərdi bacarıqlarından və keyfiyyətindən asılıdır." %}
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="card" data-aos="fade-right" data-aos-delay="200">
+                            <button id="heading5" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "Komitə seçəndə nələrə fikir verməliyəm?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow5" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse5" class="collapse" aria-labelledby="heading4" data-parent="#accordionQuestion" data-target="#arrow5">
+                                <article class="card-body">
+                                {% trans "İlk növbədə anketdə sizə təqdim olunan üzvlük və daimi komitələrlə bağlı olan prezentasiyalarla tanış olun. Bu, sizə daimi komitələr haqqında ilk təəssürat yaratmağa yardım edəcək. Daha sonra sizi maraqlandıran komitələrin “101” tanışlıq vebinarını Youtube kanalımızda izləməyi tövsiyə edirik. Həmçinin daimi komitə seçərkən öz bacarıqlarınızın, gələcək planlarınızın və maraqlarınızın həmin komitə ilə nə qədər uyğun olduğuna da diqqət edin." %}
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="card" data-aos="fade-right" data-aos-delay="200">
+                            <button id="heading6" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "Mübadilə Proqramlarına necə qoşulmaq olar?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow6" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionQuestion" data-target="#arrow6">
+                                <article class="card-body">
+                                {% trans "Bunun üçün hər hansısa bir komitəmizə üzv olmağınıza ehtiyac yoxdur. Sadəcə olaraq sosial media kanallarımızı izləməniz yetərlidir. Hər il sentyabr-oktyabr aylarında mübadilə proqramlarına qəbul imtahanı elan olunur. İmtahan orta ingilis dilində və yaxud gedəcəyiniz ölkənin yerli dilində, təməl tibbi termin biliklərinizin yoxlanılmasını hədəfləyir. Daha sonra isə müraciətçilər müsahibəyə dəvət olunur. Qəbul proesesində tələbədən 3 ölkə və 4 şöbə seçməsi tələb olunur. Ölkə seçimi AzerMDS tərəfindən keçirilən imtahanda tələbələrin topladıqları bala əsasən müəyyənləşdirildiyi halda, şöbə seçimi qəbul edən ölkənin imkanlarından asılı olaraq onlar tərəfindən müəyyənləşdirilir." %}
+                                </article>
+                            </div>
+                        </div>
+                        
+                        <div class="card" data-aos="fade-right" data-aos-delay="200">
+                            <button id="heading7" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                                {% trans "Mübadilə proqramları ödənişlidirmi?" %}
+                            </h3>
+                            <span class="position-absolute faq-arrow">
+                                <i id="arrow7" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                            </span>
+                            </button>
+                    
+                            <div id="collapse7" class="collapse" aria-labelledby="heading4" data-parent="#accordionQuestion" data-target="#arrow7">
+                                <article class="card-body">
+                                {% trans "Mübadilə proqramlarında iştirak edən tələbələr öz yol xərclərini və mübadilədə iştirak edəcəkləri ölkədən asılı olaraq 300-590 avro arası iştirak haqqı ödəməlidirlər. Bu məbləğə sizin 1 aylıq təcrübəniz, yaşayış yeriniz və gündə 1 dəfə qidalanma daxildir. Bəzən qida təmin oluna bilmədikdə, bu xidmət cib xərcliyi ilə əvəzlənə bilər. Bundan əlavə sizə həmin ölkədə kömək edəcək əlaqələndirici şəxs və təcrübənizə nəzarət edəcək tyutor ayrılır. Əksər halarda, proqrama sosial aktivitələr da daxildir." %}
+                                </article>
+                            </div>
+                        </div>
+                        
+        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- follow us -->
+    <section class="instagram-gradient p-5">
+        <p class="display-4 text-center font-coiny text-white pt-4 mobile-entry-size" data-aos="fade-down">{% trans "Bizi izləyin" %}</p>
+        <hr class="bg-white w-50 mx-auto">
+        <div class="row py-4 justify-content-around justify-content-md-center" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <a href="https://www.facebook.com/AzerMDS" class="logo-rounded text-white mx-md-4 facebook" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/azermds/" class="logo-rounded text-white mx-md-4 instagram" target="_blank"> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCuS6a8dUw8IaFKgG1Cy0dYg" class="logo-rounded text-white mx-md-4 youtube" target="_blank"> <i class="fab fa-youtube" target="_blank"></i></a>
+                <a href="https://twitter.com/azermds" class="logo-rounded text-white mx-md-4 twitter" target="_blank"> <i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+
+
+    </main>
+    
+{% endblock body %}
+
+{% block scripts %}
+<script src="{% static 'base/index/js/index.js' %}"></script>
+{% endblock scripts %}
+
