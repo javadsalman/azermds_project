@@ -1,4 +1,5 @@
 .env
+.localenv
 **/*.pyc
 **/__pycache__
 djangovenv
