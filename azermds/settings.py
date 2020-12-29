@@ -25,7 +25,6 @@ SECRET_KEY = os.getenv("secretKey")
 DEBUG = os.getenv('debugMode', 'False') == 'True'
 
 ALLOWED_HOSTS = os.getenv('allovedHosts').split(', ')
-# ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
