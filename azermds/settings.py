@@ -142,7 +142,7 @@ LOCALE_PATHS = [
 
 
 # STATIC SETTINGS
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
