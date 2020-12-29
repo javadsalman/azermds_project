@@ -28,7 +28,7 @@
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
 {% endblock links %}
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -47,7 +47,7 @@
 			{% if article.cover_image %}
 				<div class="background-img" style="background-image: url('{{article.cover_image.url}}');"></div>
 			{% else %}
-				<div class="background-img" style="background-image: url('{% static 'images/background-doctor.jpg' %}');"></div>
+				<div class="background-img" style="background-image: url('{% static 'blog/images/background-doctor.jpg' %}');"></div>
 			{% endif %}
 			<div class="container">
 				<div class="row">
@@ -139,6 +139,6 @@
 
 
 {% block scripts %}
-	<script src="{% static 'js/main.js' %}"></script>
-	<script src="{% static 'js/article.js' %}"></script>
+	<script src="{% static 'blog/js/main.js' %}"></script>
+	<script src="{% static 'blog/js/article.js' %}"></script>
 {% endblock scripts %}
