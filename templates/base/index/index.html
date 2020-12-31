@@ -56,8 +56,8 @@
 
 
     <!-- statistics -->
-    <section class="row py-5 text-center w-100 m-0 shadw-bottom-lg" style="background: linear-gradient(to bottom, rgba(255,255,255,1) 38%,rgba(242,242,242,1) 100%);">
-        <div class="col-12 col-md-4 sblue pb-5 pb-lg-0">
+    <section class="row pt-4 pt-sm-5 text-center w-100 m-0 shadw-bottom-lg" style="background: linear-gradient(to bottom, rgba(255,255,255,1) 38%,rgba(242,242,242,1) 100%);">
+        <div class="col-12 col-md-4 sblue pb-0 pb-md-3 pb-lg-5 pb-lg-0">
             <div>
                 <i class="fas fa-calendar-alt fa-4x"></i>
             </div>
@@ -65,7 +65,7 @@
                 {% trans "1992-ci ildə əsası qoyulub" %}
             </p>
         </div>
-        <div class="col-12 col-md-4 sblue pb-5 pb-lg-0">
+        <div class="col-12 col-md-4 sblue pb-0 pb-md-3 pb-lg-5 pb-lg-0">
             <div>
                 <i class="fas fa-users fa-4x"></i>
             </div>
@@ -73,7 +73,7 @@
                 {% trans "8000+ tələbəni təmsil edir" %}
             </p>
         </div>
-        <div class="col-12 col-md-4 sblue pb-0 pb-lg-0">
+        <div class="col-12 col-md-4 sblue pb-0 pb-md-3 pb-lg-5 pb-lg-0">
             <div>
                 <i class="fas fa-globe-europe fa-4x"></i>
             </div>
@@ -86,7 +86,7 @@
 
 
     <!-- committes -->
-    <section class="bg-light pt-5">
+    <section class="bg-light pt-0 pt-lg-5">
         <div class="container">
 
             <div class="row" data-aos="fade-down">
@@ -113,9 +113,9 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#score" role="tab" aria-controls="contact" aria-selected="false">SCORE</a>
                 </li>
-                <li class="nav-item">
+                {% comment %} <li class="nav-item">
                     <a class="nav-link text-dark font-garamond h5 mb-0 commitee-name px-2 px-sm-3" id="contact-tab" data-toggle="tab" href="#scorp" role="tab" aria-controls="contact" aria-selected="false">SCORP</a>
-                </li>
+                </li> {% endcomment %}
             </ul>
             <div class="tab-content border border-top-0 bg-white p-4 mb-4 rounded-bottom rounded-right shadow" id="myTabContent" data-aos="fade-up">
                 <article class="tab-pane fade show active" id="scome" role="tabpanel" aria-labelledby="home-tab">
@@ -173,7 +173,7 @@
                         </figure>
                     </div>
                 </article>
-                <article class="tab-pane fade" id="scorp" role="tabpanel" aria-labelledby="contact-tab">
+                {% comment %} <article class="tab-pane fade" id="scorp" role="tabpanel" aria-labelledby="contact-tab">
                     <h3 class="text-center h5">{% trans "İnsan Hüquqları və Sülh üzrə Daimi Komitə"%}</h3>
                     <div class="row">
                         <p class="h6 col-10 offset-1 col-lg-4 offset-lg-2 pr-lg-0 pt-lg-2 pb-4 pb-lg-5">
@@ -183,11 +183,10 @@
                             <img src="{% static 'base/index/images/scorp.png' %}" width="70%" height="80px" alt="SCORP">
                         </figure>
                     </div>
-                </article>
+                </article> {% endcomment %}
             </div>
 
-            <hr class="w-75 mx-auto mb-0 pb-5" style="margin-top: 60px;">
-            
+            <hr class="w-75 mx-auto mb-0 {% comment %} pb-5 {% endcomment %}" style="margin-top: 60px;">
         </div>
     </section>
     
@@ -347,15 +346,15 @@
     <!-- exchange program -->
     <section class="bg-light">
         <div class="container">
-            <div class="row mb-4" >
+            <div class="row mb-4">
                 <div class="col">
                     <br>
-                        <h2 class="d-block h1 font-weight-bold text-center font-quicksand text-dark">{% trans "Mübadilə Programı" %}</h2>
+                        <h2 id="ep-title" class="d-block font-weight-bold text-center font-quicksand text-dark">{% trans "Mübadilə Programı" %}</h2>
                         <span class="d-block h6 text-center font-quicksand text-dark">({% trans "Video üçün şəklə klikləyin" %})</span>
                 </div>
             </div>
             <div class="row text-center font-quicksand font-weight-bold text-dark">
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1vJsy0LuS-M" data-toggle="modal" data-target="#modal1">
                             <img src="https://pbs.twimg.com/profile_images/1224653975938654208/BjxoH-Av_400x400.jpg" class="card-img-top" alt="exchange program">
@@ -365,7 +364,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1bvx0nj8TCs" data-toggle="modal" data-target="#modal1">
                             <img src="https://cf.kizlarsoruyor.com/q12116349/150790c0-7c25-481a-9547-003cd8458fa7-m.jpg" class="card-img-top" alt="exchange program">
@@ -375,7 +374,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/TW3JU-hlKns" data-toggle="modal" data-target="#modal1">
                             <img src="https://i1.sndcdn.com/artworks-000304964559-ghfp48-t500x500.jpg" class="card-img-top" alt="exchange program">
@@ -385,7 +384,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/TA6y-oRT1w0" data-toggle="modal" data-target="#modal1">
                             <img src="https://i1.sndcdn.com/artworks-000540005223-eokgo8-t500x500.jpg" class="card-img-top" alt="exchange program">
@@ -395,7 +394,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/1IYejfWvRk0" data-toggle="modal" data-target="#modal1">
                             <img src="https://i.ytimg.com/vi/w5_0ZOz35Qk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCY4eSa-2lHjDI_dB95FyL2Wqygkw" class="card-img-top" alt="exchange program">
@@ -405,7 +404,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-3 mb-lg-5">
                     <figure class="card shadow-sm">
                         <div class="exchange-image-div aspect-ratio-box" data-href="https://www.youtube.com/embed/5k2FyUmrwNY" data-toggle="modal" data-target="#modal1">
                             <img src="https://i.ytimg.com/vi/i_xyJAqdtoY/maxresdefault.jpg" class="card-img-top" alt="exchange program">
@@ -470,7 +469,7 @@
 
 
     <!-- commonly asked -->
-    <section class="bg-light">
+    <section class="bg-light" style="margin-top: -20px;">
         <div class="container">
             <div class="row mb-3" >
                 <div class="col">
@@ -486,7 +485,7 @@
                     <div class="accordion shadow" id="accordionQuestion">
                         <div class="card" data-aos="fade-left" data-aos-delay="50">
                             <button id="heading1" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "AzerMDS-ə necə üzv ola bilərəm?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -503,7 +502,7 @@
         
                         <div class="card" data-aos="fade-right" data-aos-delay="100">
                             <button id="heading2" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "AzerMDS-ə qoşulmağın mənə hansı müsbət təsirləri olacaq?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -520,7 +519,7 @@
         
                         <div class="card" data-aos="fade-left" data-aos-delay="150">
                             <button id="heading3" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "Üzv olmaq üçün ingilis dili vacibdirmi?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -537,7 +536,7 @@
         
                         <div class="card" data-aos="fade-right" data-aos-delay="200">
                             <button id="heading4" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "AzerMDS-ə aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -554,7 +553,7 @@
 
                         <div class="card" data-aos="fade-right" data-aos-delay="200">
                             <button id="heading5" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "Komitə seçəndə nələrə fikir verməliyəm?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -571,7 +570,7 @@
 
                         <div class="card" data-aos="fade-right" data-aos-delay="200">
                             <button id="heading6" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "Mübadilə Proqramlarına necə qoşulmaq olar?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
@@ -588,11 +587,11 @@
                         
                         <div class="card" data-aos="fade-right" data-aos-delay="200">
                             <button id="heading7" class="btn card-header position-relative" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                            <h3 class="mb-0 h5 font-quicksand font-weight-bold">
+                            <h3 class="mb-0 question font-quicksand font-weight-bold">
                                 {% trans "Mübadilə proqramları ödənişlidirmi?" %}
                             </h3>
                             <span class="position-absolute faq-arrow">
-                                <i id="arrow7" class="fas fa-caret-down" style="font-size: 13px;" aria-hidden="true"></i>
+                                <i id="arrow7" class="fas fa-caret-down arrow" style="font-size: 13px;" aria-hidden="true"></i>
                             </span>
                             </button>
                     

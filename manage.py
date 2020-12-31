@@ -7,8 +7,11 @@ import dotenv
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azermds.settings')
-    dotenv.load_dotenv('.env')
-    # dotenv.load_dotenv('.localenv')
+    if os.name == 'nt':
+        dotenv.load_dotenv('.localenv')
+    else:
+        dotenv.load_dotenv()
+        
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
