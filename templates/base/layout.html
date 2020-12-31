@@ -40,20 +40,20 @@
         <!-- contact -->
         <span id="header-contact" class="float-left pb-1" style="padding-top: 3px;">
             <a tabindex="0" class="ml-2 mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
-            23 Bakikhanov Street, Baku, 370022, Azerbaijan">
+            {% trans "Bakıxanov küçəsi 23, Bakı, 370022, Azərbaycan" %}">
                 <i class="fas fa-map-marker-alt"></i>
             </a>
             
             <span class="mr-2 d-none d-md-inline">{% trans "Bakıxanov küçəsi 23, Bakı, 370022, Azərbaycan" %}</span>
 
-            <a tabindex="0" class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
+            {% comment %} <a tabindex="0" class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
             +994-12-95-35-66 | +994 12 95-48-36">
                 <i class="fas fa-phone-alt"></i>
             </a>
-            <span class="mr-2 d-none d-md-inline">+994 12 95-35-66 +994 12 95-48-36</span>
+            <span class="mr-2 d-none d-md-inline">+994 12 95-35-66 +994 12 95-48-36</span> {% endcomment %}
 
             <a tabindex="0"  class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
-            info@azermds.org">
+            office.azermds@gmail.com">
                 <i class="fas fa-envelope"></i>
             </a>
             <span class="mr-2 d-none d-md-inline">office.azermds@gmail.com</span>
@@ -163,10 +163,10 @@
             <figure class="col-8 offset-2 col-lg-3 offset-lg-0 pt-5 ml-lg-3 footer-border">
                 <img src="{% static 'base/index/images/azermds-mobile.png' %}" class="w-100" alt="AzerMDS Logo">
             </figure>
-            <article class="col-10 offset-1 pt-4 pb-lg-5 text-center col-lg-5 ml-lg-2 footer-border">
+            <article class="col-12 offset-0 col-sm-10 offset-sm-1 pt-4 pb-lg-5 text-center col-lg-5 ml-lg-2 footer-border">
                 <p class="h5 text-white font-quicksand pb-1">{% trans "HAQQIMIZDA" %}</p>
                 <p class="text-white">{% trans "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. 2007-ci ildən bu federasiyanın tamhüquqlu üzvüyük" %}</p>
-                <p class="text-white">{% trans "Əlaqə: " %}<span class="text-info ml-1">office.azermds@gmail.com</span></p>
+                <p class="text-white">{% trans "Əlaqə: " %}<a href="mailto:?body=office.azermds@gmail.com" class="text-info ml-1">office.azermds@gmail.com</a></p>
             </article>
             <div class="col-10 col-sm-12 pt-0 pt-sm-4 pt-lg-4 col-lg-3 offset-1 offset-sm-0 pl-4 pl-sm-1 ml-sm-2 ml-md-4 mx-lg-auto footer-border">
                 <div class="row">
@@ -181,7 +181,7 @@
         </section>
         <!-- copyright -->
         <section class="pl-2 text-center pl-md-0 text-white py-1 font-weight-light w-100 position-relative" style="background-color: black; font-size: 13px; word-spacing: 2px">
-            <div>{% trans "Bütün huquqları qorunur © azermds.org 2020" %}</div>
+            <div>{% trans "Bütün huquqları qorunur © azermds.org" %} <script>document.write(new Date().getFullYear())</script></div>
             <div class="font-italic" style="right: 10px;">Created by <span class="font-weight-bold">Cavad Salman</span></div>
         </section>
     </footer>
