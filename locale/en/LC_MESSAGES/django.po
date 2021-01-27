@@ -335,7 +335,6 @@ msgid "Mübadilə proqramları ödənişlidirmi?"
 msgstr "Do students the exchange programs paid?"
 
 #: .\templates\base\index\index.html:603
-#, fuzzy
 msgid ""
 "Mübadilə proqramlarında iştirak edən tələbələr öz yol xərclərini və "
 "mübadilədə iştirak edəcəkləri ölkədən asılı olaraq 300-590 avro arası "
