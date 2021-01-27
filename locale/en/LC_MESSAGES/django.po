@@ -133,8 +133,6 @@ msgid "8000+ tələbəni təmsil edir"
 msgstr "8000+ students"
 
 #: .\templates\base\index\index.html:81
-#, fuzzy
-#| msgid "120+ ölkəylə əməkdaşlıq edir"
 msgid "15 ölkəylə əməkdaşlıq edir"
 msgstr "Cooperates with 15 countries"
 
@@ -158,7 +156,6 @@ msgid "Peşəkar Mübadilə üzrə Daimi Komitə"
 msgstr "Standing Committee on Professional Exchange"
 
 #: .\templates\base\index\index.html:137
-#, fuzzy
 msgid ""
 "Tibb tələbələri tərəfindən tibb tələbələri üçün təşkil olunan praktiki "
 "bacarıqların təkmilləşməsini və yeni səhiyyə sistemləri ilə tanışlığı "
@@ -178,7 +175,6 @@ msgstr ""
 "This committee aims to actively engage medical students in public health issues and awareness campaigns."
 
 #: .\templates\base\index\index.html:156
-#, fuzzy
 msgid "Cinsi və Reproduktiv Sağlamlıq və Hüquqlar üzrə Daimi Komitə"
 msgstr ""
 "Standing Committee on Sexual and Reproductive Health and Rights including "
@@ -420,7 +416,6 @@ msgid "HAQQIMIZDA"
 msgstr "ABOUT US"
 
 #: .\templates\base\layout.html:169
-#, fuzzy
 msgid ""
 "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri "
 "Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
@@ -433,6 +428,5 @@ msgid "Əlaqə: "
 msgstr "Contact: "
 
 #: .\templates\base\layout.html:185
-#, fuzzy
 msgid "Bütün huquqları qorunur © azermds.org"
 msgstr "All right reserved © azermds.org 2020"
