@@ -158,14 +158,14 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media') #look parent dir f
 
 # PREDEPLOYING CONFIGURES
 
-SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_SECURE = False
-SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = os.getenv('sessionCookieSecure', 'False') == 'True'
+CSRF_COOKIE_SECURE = os.getenv('CSRFCookieSecure', 'False') == 'True'
+SECURE_SSL_REDIRECT = os.getenv('secureSSLRedirect', 'False') == 'True'
 
-SECURE_REFERRER_POLICY = 'strict-origin' 
-SECURE_HSTS_SECONDS = 31536000
-SECURE_HSTS_PRELOAD = False
-SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+SECURE_REFERRER_POLICY = os.getenv('secureRefererPolicy')
+SECURE_HSTS_SECONDS = int(os.getenv('secureHSTSSeconds'))
+SECURE_HSTS_PRELOAD = os.getenv('secureHSTSPreload', 'False') == 'True'
+SECURE_HSTS_INCLUDE_SUBDOMAINS = os.getenv('secureHSTSIncludeSubdomains', 'False') == 'True'
 
 
 
