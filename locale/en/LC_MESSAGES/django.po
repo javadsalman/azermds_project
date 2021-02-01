@@ -88,7 +88,6 @@ msgid "AzerMDS - Həkimlər və Təbib Tələbələr İctimai Birliyi"
 msgstr "AzerMDS: Azerbaijan Medical Doctors and Students Association"
 
 #: .\templates\base\index\index.html:11
-#, fuzzy
 msgid ""
 "Azərbaycanda tibb tələbələrinin təhsil həyatını faydalı etməyi hədəfləmiş, "
 "onları yerli və beynəlxalq arenada təmsil edən yeganə təşkilatıq."
