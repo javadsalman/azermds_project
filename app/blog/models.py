@@ -37,7 +37,7 @@ class Category(models.Model):
 class Article(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
     title = models.CharField(max_length = 100, verbose_name = 'Azərbaycanca Başlıq *')
-    title_english = models.CharField(max_length = 100, verbose_name = 'İngiliscə Başlıq')
+    title_english = models.CharField(max_length = 100, verbose_name = 'İngiliscə Başlıq', null=True, blank=True)
     content = RichTextField(
         null=False,
         verbose_name='Azərbaycanca Kontent *',
@@ -53,6 +53,8 @@ class Article(models.Model):
     content_english = RichTextField(
         verbose_name='Ingiliscə Kontent',
         extra_plugins=['youtube'],
+        null = True,
+        blank=True,
         external_plugin_resources=[(
             'youtube',
             '/staticfiles/ckeditor/extension/youtube/',
@@ -61,7 +63,7 @@ class Article(models.Model):
         )
     slug = models.SlugField(default='', blank=True, verbose_name = 'Link')
     cover_image = ProcessedImageField(upload_to = 'article/cover/', options={'quality': 90}, blank=True, null=True, verbose_name = 'Qapaq Şəkli', format='JPEG')
-    main_image = ProcessedImageField(upload_to = 'article/main_images', options={'quality': 90}, blank=True, null=False, verbose_name = 'Əsas şəkil *', format='JPEG')
+    main_image = ProcessedImageField(upload_to = 'article/main_images', options={'quality': 90}, null=False, verbose_name = 'Əsas şəkil *', format='JPEG')
     thumbnail = ImageSpecField(source = 'main_image', format='JPEG', options={'quality':60})
     category = models.ForeignKey(Category, null=False, on_delete = models.PROTECT, verbose_name = 'Kategoriya *')
     pub_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Paylaşılma Tarixi')

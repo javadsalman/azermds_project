@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="tibb tələbəsi, mübadilə programı, exchange program, scome, scope, scoph, scora, score, scorp, xaricdə praktika">
+    <meta name="keywords" content="tibb tələbəsi, mübadilə programı, exchange program, scome, scope, scoph, scora, score, xaricdə praktika">
     {% block title %}
     {% endblock title %}
     {% block metas %}
@@ -104,13 +104,13 @@
                        <span class="mdsblue fw-500">AzerMDS</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
-                        <a class="dropdown-item" href="#">{% trans "Haqqında" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Tarix" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Yeniliklər" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Qalereya" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Mübadilə Proqramı" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "2" "varengel" %}">{% trans "Haqqında" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "3" "varengel" %}">{% trans "Tarix" %}</a>
+                        <a class="dropdown-item" href="{% url 'blog' %}?type=category&value=yenilikler">{% trans "Yeniliklər" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "4" "varengel" %}">{% trans "Qalereya" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "5" "varengel" %}">{% trans "Mübadilə Proqramı" %}</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item disabled" href="#">{% trans "Bizə qoşul" %}</a>
+                        <a class="dropdown-item disabled" href="{% url 'article' "6" "varengel" %}">{% trans "Bizə qoşul" %}</a>
                     </div>
                 </li>
                 <li class="nav-item active dropdown text-center">
@@ -118,13 +118,13 @@
                         <span class="mdsblue fw-500">IFMSA</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
-                        <a class="dropdown-item" href="#">{% trans "Haqqında" %}</a>
-                        <a class="dropdown-item" href="#">SCOME</a>
-                        <a class="dropdown-item" href="#">SCOPE</a>
-                        <a class="dropdown-item" href="#">SCOPH</a>
-                        <a class="dropdown-item" href="#">SCORA</a>
-                        <a class="dropdown-item" href="#">SCORE</a>
-                        <a class="dropdown-item" href="#">SCORP</a>
+                        <a class="dropdown-item" href="{% url 'article' "7" "azermds-haqqinda" %}">{% trans "Haqqında" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "8" "scome" %}">SCOME</a>
+                        <a class="dropdown-item" href="{% url 'article' "9" "scope" %}">SCOPE</a>
+                        <a class="dropdown-item" href="{% url 'article' "10" "scoph" %}">SCOPH</a>
+                        <a class="dropdown-item" href="{% url 'article' "11" "scora" %}">SCORA</a>
+                        <a class="dropdown-item" href="{% url 'article' "12" "score" %}">SCORE</a>
+                        <a class="dropdown-item" href="{% url 'article' "13" "scorp" %}">SCORP</a>
 
                     </div>
                 </li>
@@ -133,14 +133,14 @@
                         <span class="mdsblue fw-500" style="word-spacing: -2.5px;">{% trans "Biz kimik" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
-                        <a class="dropdown-item" href="#">{% trans "Nizamnamə" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Komitələr" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Layihələr" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Beynəlxalq Təmsilçilik" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "İdarə Heyəti" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Müşahidə Heyəti" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Məzunlarımız" %}</a>
-                        <a class="dropdown-item" href="#">{% trans "Əməkdaşlıqlarımız" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "14" "nizamname" %}">{% trans "Nizamnamə" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "15" "komiteler" %}">{% trans "Komitələr" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "16" "layiheler" %}">{% trans "Layihələr" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "17" "beynelxalq-temsilcilik" %}">{% trans "Beynəlxalq Təmsilçilik" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "18" "idare-heyeti" %}">{% trans "İdarə Heyəti" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "19" "varmusahide-heyetiengel" %}">{% trans "Müşahidə Heyəti" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "20" "mezunlarimiz" %}">{% trans "Məzunlarımız" %}</a>
+                        <a class="dropdown-item" href="{% url 'article' "21" "emekdasliqlarimiz" %}">{% trans "Əməkdaşlıqlarımız" %}</a>
                     </div>
                 </li>
 
@@ -175,7 +175,7 @@
                     <figure class="col-4 col-sm-2 col-lg-4 pt-lg-0"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scoph&page=1"><img src="{% static 'base/index/images/scoph_footer.png'%}" width="60" height="65" alt="scoph"></a></figure>
                     <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scora&page=1"><img src="{% static 'base/index/images/scora_footer.png'%}" width="60" height="65" alt="scora"></a></figure>
                     <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=score&page=1"><img src="{% static 'base/index/images/score_footer.png'%}" width="60" height="65" alt="score"></a></figure>
-                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'blog' %}?type=category&value=scorp&page=1"><img src="{% static 'base/index/images/scorp_footer.png'%}" width="60" height="65" alt="scorp"></a></figure>
+                    <figure class="col-4 col-sm-2 col-lg-4 pt-lg-3"><a class="committee-footer" href="{% url 'article' "16" "scorp" %}"><img src="{% static 'base/index/images/scorp_footer.png'%}" width="60" height="65" alt="scorp"></a></figure>
                 </div>
             </div>
         </section>
