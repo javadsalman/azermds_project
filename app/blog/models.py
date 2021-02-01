@@ -46,7 +46,7 @@ class Article(models.Model):
         # CKEDITOR.plugins.addExternal(...)
         external_plugin_resources=[(
             'youtube',
-            '/static/ckeditor/extension/youtube/',
+            '/staticfiles/ckeditor/extension/youtube/',
             'plugin.js',
         )],
     )
@@ -55,7 +55,7 @@ class Article(models.Model):
         extra_plugins=['youtube'],
         external_plugin_resources=[(
             'youtube',
-            '/static/ckeditor/extension/youtube/',
+            '/staticfiles/ckeditor/extension/youtube/',
             'plugin.js',
         )],
         )
