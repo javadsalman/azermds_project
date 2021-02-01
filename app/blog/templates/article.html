@@ -106,7 +106,7 @@
 							<h2>{% trans "Əlaqəli" %}</h2>
 						</div>
 
-						{% for related_article in article.category.article_set.all|slice:':7' %}
+						{% for related_article in article.category.article_set.all|slice:':6' %}
 							{% if related_article.id != article.id %}
 								<div class="post post-widget">
 									<figure>
