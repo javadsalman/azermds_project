@@ -422,7 +422,7 @@ msgstr "Exchange Program"
 
 #: .\templates\base\layout.html:114
 msgid "Bizə qoşul"
-msgstr "Join us"
+msgstr "Join Us"
 
 #: .\templates\base\layout.html:134
 msgid "Biz kimik"
