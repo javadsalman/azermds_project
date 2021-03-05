@@ -192,9 +192,9 @@ CKEDITOR_CONFIGS = {
     ],
     'extraPlugins': 'youtube',
     'contentsCss': (
-        '/static/ckeditor/customization-files/nunito_font.css',
-        '/static/ckeditor/customization-files/bootstrap.css',
-        '/static/ckeditor/customization-files/style.css',
+        '/staticfiles/ckeditor/customization-files/nunito_font.css',
+        '/staticfiles/ckeditor/customization-files/bootstrap.css',
+        '/staticfiles/ckeditor/customization-files/style.css',
     ),
 },
 }
