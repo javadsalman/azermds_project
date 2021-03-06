@@ -65,7 +65,7 @@ class Article(models.Model):
     cover_image = ProcessedImageField(upload_to = 'article/cover/', options={'quality': 150}, blank=True, null=True, verbose_name = 'Qapaq Şəkli', format='JPEG')
     main_image = ProcessedImageField(upload_to = 'article/main_images', options={'quality': 90}, null=False, verbose_name = 'Əsas şəkil *', format='JPEG')
     thumbnail = ImageSpecField(source = 'main_image', format='JPEG', options={'quality':60})
-    category = models.ForeignKey(Category, null=False, on_delete = models.PROTECT, verbose_name = 'Kategoriya *')
+    category = models.ForeignKey(Category, null=False, on_delete = models.PROTECT, verbose_name = 'Kateqoriya *')
     pub_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Paylaşılma Tarixi')
 
     class Meta:
