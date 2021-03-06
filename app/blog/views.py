@@ -46,22 +46,27 @@ class BlogListView(ListView):
         context.update({
             'categories': counts,
             'all_category_count': sum(map(lambda x: x.article__count, counts)),
-            'page_list': self.get_page_list(context['page_obj'], button_count=5   ),
+            'page_list': self.get_page_list(context['page_obj'].number, context['page_obj'].paginator.num_pages, button_count=5   ),
         })
         return context
 
-    def get_page_list(self, page_obj, button_count):
-        current_page = page_obj.number
-        page_count = page_obj.paginator.num_pages
-        start = current_page - button_count//2
-        end = current_page + button_count//2
-        if start < 1:
-            end+= 1-start
-            start = 1
-        elif end > page_count:
-            start-= end-page_count
-            end = page_count
-        return list(range(start, end+1))[:page_count]
+    # get pagination number list like google style. For example if the max page button count is 5 and current page is 7 but total page count is 8
+    # then it gives 4, 5, 6, 7, 8. But most normal situation for example 20 total page and max 5 page count and current page 12...
+    # then it gives a range with set 12 to center and add 2 to right and subtract 2 to right. It shows as 10, 11, 12, 13, 14
+    def get_page_list(self, current_page, page_count, button_count):
+        if page_count <= button_count:
+            return list(range(1, page_count+1))
+        else:
+            start = current_page - button_count//2
+            end = current_page + button_count//2
+            print(start, end)
+            if start < 1:
+                end+= 1-start
+                start = 1
+            elif end > page_count:
+                start-= end-page_count
+                end = page_count
+            return list(range(start, end+1))[:page_count]
 
 
     
