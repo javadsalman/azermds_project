@@ -16,7 +16,7 @@ class ArticleImageInline(admin.StackedInline):
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
     fieldsets = (
-        ('MƏQALƏNİN ADI (MAKS 100 SIMVOL)', {
+        ('MƏQALƏNİN ADI ( MAKSIMUM 100 SIMVOL! )', {
             "fields": (
                 ('title', 'title_english'),
             ),
@@ -40,7 +40,7 @@ class ArticleAdmin(admin.ModelAdmin):
             )
         }),
 
-        ('ŞƏKİL', {
+        ('ŞƏKİL ( MAKSIMUM 2 MEGABYTE! )', {
             "fields": (
                 'main_image_tag', 'main_image', 'cover_image_tag', 'cover_image', 
             ),
