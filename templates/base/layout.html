@@ -110,7 +110,7 @@
                         <a class="dropdown-item" href="{% url 'article' "4" "qaleriya" %}">{% trans "Qalereya" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "5" "mubadile-proqrami" %}">{% trans "Mübadilə Proqramı" %}</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'article' "6" "bize-qosul" %}">{% trans "Bizə qoşul" %}</a>
+                        <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSftBskVVhhoKgCukJ6khx8IlTFc53wLubRVvjGfqXXMReW7VA/viewform" target="_blank">{% trans "Bizə qoşul" %}</a>
                     </div>
                 </li>
                 <li class="nav-item active dropdown text-center">
@@ -134,7 +134,7 @@
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
                         <a class="dropdown-item" href="{% url 'article' "14" "nizamname" %}">{% trans "Nizamnamə" %}</a>
-                        <a class="dropdown-item" href="{% url 'article' "15" "komiteler" %}">{% trans "Komitələr" %}</a>
+                        <a class="dropdown-item text-lowercase" href="{% url 'article' "15" "komiteler" %}">{% trans "Komitələr" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "16" "layiheler" %}">{% trans "Layihələr" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "17" "beynelxalq-temsilcilik" %}">{% trans "Beynəlxalq Təmsilçilik" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "18" "idare-heyeti" %}">{% trans "İdarə Heyəti" %}</a>
@@ -180,9 +180,17 @@
             </div>
         </section>
         <!-- copyright -->
-        <section class="pl-2 text-center pl-md-0 text-white py-1 font-weight-light w-100 position-relative" style="background-color: black; font-size: 13px; word-spacing: 2px">
+        <section class="pl-2 text-center pl-md-0 text-white py-1 font-weight-light w-100" style="background-color: black; font-size: 13px; word-spacing: 2px">
             <div>{% trans "Bütün huquqları qorunur © azermds.org" %} <script>document.write(new Date().getFullYear())</script></div>
-            <div class="font-italic" style="right: 10px;">Created by <span class="font-weight-bold">Cavad Salman</span></div>
+            <div class="font-italic pt-1">
+                <span>
+                    Created by
+                    <span class="font-weight-bold">Cavad Salman (VPPRC)</span>
+                </span>
+                <a href="http://www.djangoproject.com/" target="_blank">
+                    <img src="https://www.djangoproject.com/m/img/badges/djangomade124x25.gif" border="0" alt="Made with Django." title="Made with Django."/>
+                </a>
+            </div>
         </section>
     </footer>
 

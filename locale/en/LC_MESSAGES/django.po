@@ -475,4 +475,4 @@ msgstr "Contact: "
 
 #: .\templates\base\layout.html:185
 msgid "Bütün huquqları qorunur © azermds.org"
-msgstr "All right reserved © azermds.org 2020"
+msgstr "All right reserved © azermds.org"

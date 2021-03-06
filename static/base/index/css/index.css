@@ -27,6 +27,15 @@ body{
     border-bottom-width: 12px !important;
 }
 
+.fa-play-circle{
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 70px;
+}
 
 /* follow us */
 .instagram-gradient{
@@ -76,17 +85,17 @@ body{
     }
 
     #jumbo-h1{
-        font-size: 30px;
+        font-size: 40px;
         margin-bottom: 15px;
         margin-top: 15px;
     }
     #jumbo-h2{
-        font-size: 16px;
+        font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
     }
     #jumbo-p{
-        font-size: 13px;
+        font-size: 16px;
         text-align: justify;
     }
 
@@ -100,8 +109,13 @@ body{
 
     /* commite */
     .commitee-name{
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 700;
+    }
+
+    #commites-names-ul {
+        overflow: auto;
+        max-height: 45px;
     }
 
 
@@ -155,7 +169,7 @@ body{
     }
 
     .question{
-        font-size: 15px;
+        font-size: 16px;
         padding-right: 6px;
     }
 
@@ -246,6 +260,10 @@ body{
     .commitee-name{
         font-size: 20px;
         font-weight: 700;
+    }
+
+    #commites-names-ul {
+        overflow: inherit;
     }
 
     #ep-title{
