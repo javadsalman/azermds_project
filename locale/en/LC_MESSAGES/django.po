@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-01 14:05+0400\n"
+"POT-Creation-Date: 2021-04-02 16:59+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "AzerMDS Bloq - Yeni məqalələrlə yeni biliklər və fürsətlər"
 msgstr "AzerMDS Blog - Explore new articles, gain new knowledge"
 
 #: .\app\blog\templates\blog.html:8
-#, fuzzy
 msgid ""
 "AzerMDS ilə bağlı hər şeyi bloqumuzdan öyrənə bilərsiniz. Ən son yenilik və "
 "imkanlar barədə sizi məlumatlandırmaq üçün ən yeni məqalələri sizinlə "
@@ -83,11 +82,388 @@ msgstr "A month ago"
 msgid "1 il əvvəl"
 msgstr "A year ago"
 
-#: .\templates\base\index\index.html:10
+#: .\templates\admin\404.html:4 .\templates\admin\404.html:8
+msgid "Page not found"
+msgstr ""
+
+#: .\templates\admin\404.html:10
+msgid "We’re sorry, but the requested page could not be found."
+msgstr ""
+
+#: .\templates\admin\500.html:6 .\templates\admin\app_index.html:9
+#: .\templates\admin\auth\user\change_password.html:13
+#: .\templates\admin\base.html:61 .\templates\admin\change_form.html:18
+#: .\templates\admin\change_list.html:31
+#: .\templates\admin\delete_confirmation.html:14
+#: .\templates\admin\delete_selected_confirmation.html:14
+#: .\templates\admin\invalid_setup.html:6
+#: .\templates\admin\object_history.html:6
+msgid "Home"
+msgstr ""
+
+#: .\templates\admin\500.html:7
+msgid "Server error"
+msgstr ""
+
+#: .\templates\admin\500.html:11
+msgid "Server error (500)"
+msgstr ""
+
+#: .\templates\admin\500.html:14
+msgid "Server Error <em>(500)</em>"
+msgstr ""
+
+#: .\templates\admin\500.html:15
+msgid ""
+"There’s been an error. It’s been reported to the site administrators via "
+"email and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: .\templates\admin\actions.html:8
+msgid "Run the selected action"
+msgstr ""
+
+#: .\templates\admin\actions.html:8
+msgid "Go"
+msgstr ""
+
+#: .\templates\admin\actions.html:16
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: .\templates\admin\actions.html:16
+#, python-format
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr ""
+
+#: .\templates\admin\actions.html:18
+msgid "Clear selection"
+msgstr ""
+
+#: .\templates\admin\auth\user\add_form.html:6
+msgid ""
+"First, enter a username and password. Then, you’ll be able to edit more user "
+"options."
+msgstr ""
+
+#: .\templates\admin\auth\user\add_form.html:8
+msgid "Enter a username and password."
+msgstr ""
+
+#: .\templates\admin\auth\user\change_password.html:17
+#: .\templates\admin\auth\user\change_password.html:55
+#: .\templates\admin\base.html:49
+msgid "Change password"
+msgstr ""
+
+#: .\templates\admin\auth\user\change_password.html:28
+#: .\templates\admin\change_form.html:43 .\templates\admin\change_list.html:51
+#: .\templates\admin\login.html:21
+msgid "Please correct the error below."
+msgstr ""
+
+#: .\templates\admin\auth\user\change_password.html:28
+#: .\templates\admin\change_form.html:43 .\templates\admin\change_list.html:51
+#: .\templates\admin\login.html:21
+msgid "Please correct the errors below."
+msgstr ""
+
+#: .\templates\admin\auth\user\change_password.html:32
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: .\templates\admin\base.html:35
+msgid "Welcome,"
+msgstr ""
+
+#: .\templates\admin\base.html:40
+msgid "View site"
+msgstr ""
+
+#: .\templates\admin\base.html:45
+msgid "Documentation"
+msgstr ""
+
+#: .\templates\admin\base.html:51
+msgid "Log out"
+msgstr ""
+
+#: .\templates\admin\base_site.html:3
+msgid "Django site admin"
+msgstr ""
+
+#: .\templates\admin\base_site.html:6
+msgid "Django administration"
+msgstr ""
+
+#: .\templates\admin\change_form.html:21
+#: .\templates\admin\change_list_object_tools.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: .\templates\admin\change_form_object_tools.html:5
+#: .\templates\admin\object_history.html:10
+msgid "History"
+msgstr ""
+
+#: .\templates\admin\change_form_object_tools.html:7
+#: .\templates\admin\edit_inline\stacked.html:14
+#: .\templates\admin\edit_inline\tabular.html:36
+msgid "View on site"
+msgstr ""
+
+#: .\templates\admin\change_list.html:62
+msgid "Filter"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:17
+msgid "Remove from sorting"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:18
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:19
+msgid "Toggle sorting"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:18
+#: .\templates\admin\submit_line.html:7
+#: .\templates\admin\widgets\related_widget_wrapper.html:25
+msgid "Delete"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:24
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:31
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:38
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:40
+#: .\templates\admin\delete_selected_confirmation.html:39
+msgid "Objects"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:47
+#: .\templates\admin\delete_selected_confirmation.html:50
+msgid "Yes, I’m sure"
+msgstr ""
+
+#: .\templates\admin\delete_confirmation.html:48
+#: .\templates\admin\delete_selected_confirmation.html:51
+msgid "No, take me back"
+msgstr ""
+
+#: .\templates\admin\delete_selected_confirmation.html:17
+msgid "Delete multiple objects"
+msgstr ""
+
+#: .\templates\admin\delete_selected_confirmation.html:23
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: .\templates\admin\delete_selected_confirmation.html:30
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: .\templates\admin\delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: .\templates\admin\edit_inline\stacked.html:12
+#: .\templates\admin\edit_inline\tabular.html:34
+#: .\templates\admin\index.html:40
+#: .\templates\admin\widgets\related_widget_wrapper.html:11
+msgid "Change"
+msgstr ""
+
+#: .\templates\admin\edit_inline\stacked.html:12
+#: .\templates\admin\edit_inline\tabular.html:34
+#: .\templates\admin\index.html:38
+msgid "View"
+msgstr ""
+
+#: .\templates\admin\edit_inline\tabular.html:20
+msgid "Delete?"
+msgstr ""
+
+#: .\templates\admin\filter.html:2
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: .\templates\admin\includes\object_delete_summary.html:2
+msgid "Summary"
+msgstr ""
+
+#: .\templates\admin\index.html:20
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: .\templates\admin\index.html:31
+#: .\templates\admin\widgets\related_widget_wrapper.html:18
+msgid "Add"
+msgstr ""
+
+#: .\templates\admin\index.html:51
+msgid "You don’t have permission to view or edit anything."
+msgstr ""
+
+#: .\templates\admin\index.html:59
+msgid "Recent actions"
+msgstr ""
+
+#: .\templates\admin\index.html:60
+msgid "My actions"
+msgstr ""
+
+#: .\templates\admin\index.html:64
+msgid "None available"
+msgstr ""
+
+#: .\templates\admin\index.html:78
+msgid "Unknown content"
+msgstr ""
+
+#: .\templates\admin\invalid_setup.html:12
+msgid ""
+"Something’s wrong with your database installation. Make sure the appropriate "
+"database tables have been created, and make sure the database is readable by "
+"the appropriate user."
+msgstr ""
+
+#: .\templates\admin\login.html:37
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: .\templates\admin\login.html:57
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: .\templates\admin\login.html:61
+msgid "Log in"
+msgstr ""
+
+#: .\templates\admin\object_history.html:22
+msgid "Date/time"
+msgstr ""
+
+#: .\templates\admin\object_history.html:23
+msgid "User"
+msgstr ""
+
+#: .\templates\admin\object_history.html:24
+msgid "Action"
+msgstr ""
+
+#: .\templates\admin\object_history.html:38
+msgid ""
+"This object doesn’t have a change history. It probably wasn’t added via this "
+"admin site."
+msgstr ""
+
+#: .\templates\admin\pagination.html:10 .\templates\admin\search_form.html:9
+msgid "Show all"
+msgstr ""
+
+#: .\templates\admin\pagination.html:11 .\templates\admin\submit_line.html:4
+msgid "Save"
+msgstr ""
+
+#: .\templates\admin\popup_response.html:3
+msgid "Popup closing…"
+msgstr ""
+
+#: .\templates\admin\search_form.html:7
+msgid "Search"
+msgstr ""
+
+#: .\templates\admin\search_form.html:9
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\admin\search_form.html:9
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: .\templates\admin\submit_line.html:9
+msgid "Save as new"
+msgstr ""
+
+#: .\templates\admin\submit_line.html:10
+msgid "Save and add another"
+msgstr ""
+
+#: .\templates\admin\submit_line.html:11
+msgid "Save and continue editing"
+msgstr ""
+
+#: .\templates\admin\submit_line.html:11
+msgid "Save and view"
+msgstr ""
+
+#: .\templates\admin\submit_line.html:12
+msgid "Close"
+msgstr ""
+
+#: .\templates\admin\widgets\related_widget_wrapper.html:10
+#, python-format
+msgid "Change selected %(model)s"
+msgstr ""
+
+#: .\templates\admin\widgets\related_widget_wrapper.html:17
+#, python-format
+msgid "Add another %(model)s"
+msgstr ""
+
+#: .\templates\admin\widgets\related_widget_wrapper.html:24
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr ""
+
+#: .\templates\base\index\index.html:10 .\templates\base\index\index.html:17
 msgid "AzerMDS - Həkimlər və Təbib Tələbələr İctimai Birliyi"
 msgstr "AzerMDS: Azerbaijan Medical Doctors and Students Association"
 
-#: .\templates\base\index\index.html:11
+#: .\templates\base\index\index.html:11 .\templates\base\index\index.html:18
 msgid ""
 "Azərbaycanda tibb tələbələrinin təhsil həyatını faydalı etməyi hədəfləmiş, "
 "onları yerli və beynəlxalq arenada təmsil edən yeganə təşkilatıq."
@@ -96,57 +472,58 @@ msgstr ""
 "medical students in Azerbaijan more fruitful and represent them at the local "
 "and international level."
 
-#: .\templates\base\index\index.html:45
-msgid "AzerMDS-ə xoş gəldiniz"
+#: .\templates\base\index\index.html:54
+msgid "AzerMDS-ə xoş gəldiniz!"
 msgstr "Welcome to AzerMDS"
 
-#: .\templates\base\index\index.html:46
+#: .\templates\base\index\index.html:55
 msgid ""
-"Biz yeni bacarıqlar öyrənmək, bilik yaratmaq və bunu başqalarına öyrətmək "
-"üçün buradayıq"
-msgstr "We are here to learn new skills, gain knowledge and teach others"
+"Biz yeni bilik və bacarıqlar qazanmaq və öyrəndiklərimizi başqalarına da "
+"çatdırmaq üçün buradayıq."
+msgstr "We are here to learn new skills, gain knowledge and teach others."
 
-#: .\templates\base\index\index.html:47
+#: .\templates\base\index\index.html:56
 msgid ""
 "Biz ölkəmizdə həyatını yalnız tibbin öyrənilməsinə deyil, həm də cinsi "
-"təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə, "
+"təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə,"
 "beynəlxalq araşdırmalara, ictimai sağlamlığa, insan hüquqları uğrunda "
 "mübarizəyə həsr etmiş həkimlər yetişdiririk."
 msgstr ""
 "We provide our country with doctors who are not only dedicated to the study "
 "of medicine, but also to sex education, to the education of their "
 "colleagues, to explore the medicine of other countries, to learn about "
-"international research, to influence public health, to fight for human rights"
+"international research, to influence public health, to fight for human "
+"rights."
 
-#: .\templates\base\index\index.html:48
+#: .\templates\base\index\index.html:57
 msgid "Bizə Qoşul"
 msgstr "Join Us"
 
-#: .\templates\base\index\index.html:49
+#: .\templates\base\index\index.html:58
 msgid "Daha Çox"
 msgstr "Learn More"
 
-#: .\templates\base\index\index.html:65
+#: .\templates\base\index\index.html:74
 msgid "1992-ci ildə əsası qoyulub"
 msgstr "Founded in 1992"
 
-#: .\templates\base\index\index.html:73
+#: .\templates\base\index\index.html:82
 msgid "8000+ tələbəni təmsil edir"
 msgstr "8000+ students"
 
-#: .\templates\base\index\index.html:81
+#: .\templates\base\index\index.html:90
 msgid "15 ölkəylə əməkdaşlıq edir"
 msgstr "Cooperates with 15 countries"
 
-#: .\templates\base\index\index.html:95 .\templates\base\layout.html:138
+#: .\templates\base\index\index.html:104
 msgid "Komitələr"
 msgstr "COMMITTEES"
 
-#: .\templates\base\index\index.html:123
+#: .\templates\base\index\index.html:131
 msgid "Tibb Təhsili üzrə Daimi Komitə"
 msgstr "Standing Committee on Medical Education"
 
-#: .\templates\base\index\index.html:126
+#: .\templates\base\index\index.html:134
 msgid ""
 "Tibb Təhsilinin keyfiyyətinin kurrikulumdan kənar tədbirlərlə "
 "yaxşılaşdırılmasını (dəstəklənməsini) hədəfləyir."
@@ -154,11 +531,11 @@ msgstr ""
 "This committee aims to improve and support the quality of medical education "
 "through extracurricular activities."
 
-#: .\templates\base\index\index.html:134
+#: .\templates\base\index\index.html:142
 msgid "Peşəkar Mübadilə üzrə Daimi Komitə"
 msgstr "Standing Committee on Professional Exchange"
 
-#: .\templates\base\index\index.html:137
+#: .\templates\base\index\index.html:145
 msgid ""
 "Tibb tələbələri tərəfindən tibb tələbələri üçün təşkil olunan praktiki "
 "bacarıqların təkmilləşməsini və yeni səhiyyə sistemləri ilə tanışlığı "
@@ -168,11 +545,11 @@ msgstr ""
 "students, for medical students and aims to improve the practical skills of "
 "medical students and familiarize them with new healthcare systems."
 
-#: .\templates\base\index\index.html:145
+#: .\templates\base\index\index.html:153
 msgid "İctimai Səhiyyə üzrə Daimi Komitə"
 msgstr "Standing Committee on Public Health"
 
-#: .\templates\base\index\index.html:148
+#: .\templates\base\index\index.html:156
 msgid ""
 "Tibb Tələbələrinin İctimai Səhiyyə problemlərinin həllində, maarifləndirmə "
 "işlərində aktiv iştirakını hədəfləyir."
@@ -180,13 +557,13 @@ msgstr ""
 "This committee aims to actively engage medical students in public health "
 "issues and awareness campaigns."
 
-#: .\templates\base\index\index.html:156
+#: .\templates\base\index\index.html:164
 msgid "Cinsi və Reproduktiv Sağlamlıq və Hüquqlar üzrə Daimi Komitə"
 msgstr ""
 "Standing Committee on Sexual and Reproductive Health and Rights including "
 "HIV and AIDS"
 
-#: .\templates\base\index\index.html:159
+#: .\templates\base\index\index.html:167
 msgid ""
 "Bu komitə tibb tələbələrinin cinsi və reproduktiv sağlamlıq, hüquqlar, İİV "
 "və QİÇS haqqında maarifləndirmə işlərində aktiv iştirakını hədəfləyir."
@@ -194,11 +571,11 @@ msgstr ""
 "This committee targets medical students' active participation in sexual and "
 "reproductive health, rights and HIV / AIDS awareness."
 
-#: .\templates\base\index\index.html:167
+#: .\templates\base\index\index.html:175
 msgid "Elmi Mübailə üzrə Daimi Komitə"
 msgstr "Standing Committee on Research Exchange"
 
-#: .\templates\base\index\index.html:170
+#: .\templates\base\index\index.html:178
 msgid ""
 "Bu komitə elmi araşdırma mübadiləsinə fokuslanmışdır və yuxarıdakı ilə eyni "
 "prinsiplə təşkil olunur."
@@ -206,47 +583,59 @@ msgstr ""
 "This committee aims to increase the scientific research skills of medical "
 "students by organising research exchange programs."
 
-#: .\templates\base\index\index.html:355
+#: .\templates\base\index\index.html:186
+msgid "İnsan Hüquqları və Sülh üzrə Daimi Komitə"
+msgstr "Standing Committee on Research Exchange"
+
+#: .\templates\base\index\index.html:189
+msgid ""
+"Tələbələrin insan hüquqları və sülhün bərqərar edilməsi ilə bağlı "
+"biliklərini artırmaq və həm iş şəraitində, həm də gündəlik həyatda insan "
+"hüquqları və etika qaydalarına uyğun hərəkət etmək üçün üsul və bacarıqları "
+"öyrətməyi hədəfləyir."
+msgstr ""
+
+#: .\templates\base\index\index.html:362
 msgid "Mübadilə Programı"
 msgstr "Exchange Program"
 
-#: .\templates\base\index\index.html:356
+#: .\templates\base\index\index.html:363
 msgid "Video üçün şəklə klikləyin"
 msgstr "Click on Image to Play Video"
 
-#: .\templates\base\index\index.html:366
+#: .\templates\base\index\index.html:377
 msgid "Öyrənək"
 msgstr "Let's learn"
 
-#: .\templates\base\index\index.html:376
+#: .\templates\base\index\index.html:388
 msgid "Kəşf edək"
 msgstr "Let's explore"
 
-#: .\templates\base\index\index.html:386
+#: .\templates\base\index\index.html:399
 msgid "Tanış olaq"
 msgstr "Let's get to know"
 
-#: .\templates\base\index\index.html:396
+#: .\templates\base\index\index.html:410
 msgid "Əylənək"
 msgstr "Let's enjoy"
 
-#: .\templates\base\index\index.html:406
+#: .\templates\base\index\index.html:421
 msgid "Gülümsəyək"
 msgstr "Let's smile"
 
-#: .\templates\base\index\index.html:416
+#: .\templates\base\index\index.html:432
 msgid "Mübadilə aparaq"
 msgstr "Let's exchange"
 
-#: .\templates\base\index\index.html:481
+#: .\templates\base\index\index.html:497
 msgid "TEZ-TEZ VERİLƏN SUALLAR"
 msgstr "COMMONLY ASKED QUESTIONS"
 
-#: .\templates\base\index\index.html:492
+#: .\templates\base\index\index.html:508
 msgid "AzerMDS-ə necə üzv ola bilərəm?"
 msgstr "How can I become a member of AzerMDS?"
 
-#: .\templates\base\index\index.html:501
+#: .\templates\base\index\index.html:517
 msgid ""
 "Üzv olmaq üçün AzerMDS üzvlük anketini doldurmaq lazımdır. Bu anket hər ay "
 "üzvlük həftəsi müddətində aktiv olur. Sosial media hesablarımızı izləyərək "
@@ -268,11 +657,11 @@ msgstr ""
 "is introduced to you at the end of the form and then accept the terms. You "
 "can fill out the form both in English and in Azerbaijani languages"
 
-#: .\templates\base\index\index.html:509
+#: .\templates\base\index\index.html:525
 msgid "AzerMDS-ə qoşulmağın mənə hansı müsbət təsirləri olacaq?"
 msgstr "What does the membership entail?"
 
-#: .\templates\base\index\index.html:518
+#: .\templates\base\index\index.html:534
 msgid ""
 "Bizə qoşulmaqla siz tibbi bilik və bacarıqlarınızı artırmaqla yanaşı qlobal "
 "səhiyyə ilə daha yaxından tanış ola, araşdırma, ünsiyyət və liderlik "
@@ -290,11 +679,11 @@ msgstr ""
 "running projects actively, drawing up policy papers related to medical "
 "topics, and networking you may take the matters into your own hands."
 
-#: .\templates\base\index\index.html:526
+#: .\templates\base\index\index.html:542
 msgid "Üzv olmaq üçün ingilis dili vacibdirmi?"
 msgstr "Is English necessary for becoming a member?"
 
-#: .\templates\base\index\index.html:535
+#: .\templates\base\index\index.html:551
 msgid ""
 "Üzv olmaq üçün ingilis dili bilmək vacib deyil, lakin arzuolunandır. Onu da "
 "qeyd edək ki, İdarə Heyəti və assistent çağırışları zamanı, habelə "
@@ -305,11 +694,11 @@ msgstr ""
 "Assistant calls, as well as for external representation English may be "
 "required."
 
-#: .\templates\base\index\index.html:543
+#: .\templates\base\index\index.html:559
 msgid "AzerMDS-ə aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?"
 msgstr "Does an active membership pose a threat to my success at university?"
 
-#: .\templates\base\index\index.html:552
+#: .\templates\base\index\index.html:568
 msgid ""
 "AzerMDS tələbələrin tələbələr üçün yaratdığı və yalnız tələbələr tərəfindən "
 "idarə olunan təşkilat olduğuna görə bütün fəaliyyət zamanı dərslərin və "
@@ -322,11 +711,11 @@ msgstr ""
 "active membership entirely depend on individual skills and the quality of "
 "members."
 
-#: .\templates\base\index\index.html:560
+#: .\templates\base\index\index.html:576
 msgid "Komitə seçəndə nələrə fikir verməliyəm?"
 msgstr "What should I consider when selecting a committee?"
 
-#: .\templates\base\index\index.html:569
+#: .\templates\base\index\index.html:585
 msgid ""
 "İlk növbədə anketdə sizə təqdim olunan üzvlük və daimi komitələrlə bağlı "
 "olan prezentasiyalarla tanış olun. Bu, sizə daimi komitələr haqqında ilk "
@@ -340,11 +729,11 @@ msgstr ""
 "impression about standing committees. Afterwards, you can watch our \"101\" "
 "webinar series about standing committees from youtube  channel"
 
-#: .\templates\base\index\index.html:577
+#: .\templates\base\index\index.html:593
 msgid "Mübadilə Proqramlarına necə qoşulmaq olar?"
-msgstr "How can I join exchange programs?"
+msgstr "How can I be part of the exchange program?"
 
-#: .\templates\base\index\index.html:586
+#: .\templates\base\index\index.html:602
 msgid ""
 "Bunun üçün hər hansısa bir komitəmizə üzv olmağınıza ehtiyac yoxdur. Sadəcə "
 "olaraq sosial media kanallarımızı izləməniz yetərlidir. Hər il sentyabr-"
@@ -358,46 +747,46 @@ msgid ""
 "müəyyənləşdirilir."
 msgstr ""
 "There is no need to become a member of any standing committee for this. It "
-"is enough to follow our social media accounts. Each year in September - "
-"October months entrance exam for exchange programs is announced . Exam aims "
-"to evaluate your basic medical knowledge in English or native language of  "
-"country that you chose.Afterwards applicants are invited to interview.During "
-"the admission process it is required to choose 3 countries and 4 departments "
-"from students.Country selection is determined by AzerMDS according to score "
-"of students during exam, but department choice is determined by the host "
-"country depending on its opportunities"
+"is sufficient to follow our social media accounts. Each year through "
+"September - October, an open call is announced for the exchange program, the "
+"applicants of which are required to take an exam. The exam aims to evaluate "
+"basic medical knowledge in English. Afterward, successful applicants are "
+"invited to an interview, where they are expected to rank three countries of "
+"preference and later on four departments throughout the admission process. "
+"An exchange placement is offered considering the applicants' overall score, "
+"while the hosting organization determines the hospital/clinic department."
 
-#: .\templates\base\index\index.html:594
+#: .\templates\base\index\index.html:610
 msgid "Mübadilə proqramları ödənişlidirmi?"
-msgstr "Are students the exchange programs paid?"
+msgstr "What does the exchange fee cover?"
 
-#: .\templates\base\index\index.html:603
+#: .\templates\base\index\index.html:619
 msgid ""
 "Mübadilə proqramlarında iştirak edən tələbələr öz yol xərclərini və "
 "mübadilədə iştirak edəcəkləri ölkədən asılı olaraq 300-590 avro arası "
-"iştirak haqqı ödəməlidirlər. Bu məbləğə sizin 1 aylıq təcrübəniz, yaşayış "
-"yeriniz və gündə 1 dəfə qidalanma daxildir. Bəzən qida təmin oluna "
+"iştirak haqqı ödəməlidirlər. Bu məbləğə sizin bir aylıq təcrübəniz, yaşayış "
+"yeriniz və gündə bir dəfə qidalanma daxildir. Bəzən qida təmin oluna "
 "bilmədikdə, bu xidmət cib xərcliyi ilə əvəzlənə bilər. Bundan əlavə sizə "
 "həmin ölkədə kömək edəcək əlaqələndirici şəxs və təcrübənizə nəzarət edəcək "
 "tyutor ayrılır. Əksər halarda, proqrama sosial fəaliyyətlər də daxildir."
 msgstr ""
-"The students who want to participate in exchange programs should cover their "
-"own travel cost (approximately €300-590 participation fee depending on "
-"country of preference). This cost includes your 1 month-long experience "
-"during the exchange, accommodation and 1 meal a day. In case you can't be "
-"provided with 1 meal a day, this service can be substituted with pocket "
-"money. Additionally, a contact person will be assigned to you who will help "
-"you and guide you through your stay. Moreover,a tutor will supervise you at "
-"the department that you’ve been allocated to. In most cases the program will "
-"include social activities as well."
+"The exchange fee (approximately €300-590 participation fee depending on "
+"country of preference) includes the cost of your one-month-long experience "
+"during the exchange period, accommodation, and one meal a day. The students "
+"who want to participate in the exchange program should cover their travel "
+"costs. If the hosting organization can't provide one meal a day, this "
+"service will be substituted with pocket money. You will be assigned to a "
+"contact person who will guide you through your stay. Moreover, a tutor will "
+"supervise you in the department. In most cases, the program will include "
+"social activities as well."
 
-#: .\templates\base\index\index.html:621
+#: .\templates\base\index\index.html:637
 msgid "Bizi izləyin"
 msgstr "FOLLOW US"
 
 #: .\templates\base\layout.html:43 .\templates\base\layout.html:47
-msgid "Bakıxanov küçəsi 23, Bakı, 370022, Azərbaycan"
-msgstr "23 Bakikhanov Street, Baku, 370022, Azerbaijan"
+msgid "Cəfər Cabbarlı küçəsi 609, Globus Center 13-cü mərtəbə"
+msgstr "13th Floor, Globus Center, 609 Jafar Jabbarli street"
 
 #: .\templates\base\layout.html:108 .\templates\base\layout.html:122
 msgid "Haqqında"
@@ -428,8 +817,12 @@ msgid "Biz kimik"
 msgstr "Who We Are"
 
 #: .\templates\base\layout.html:137
-msgid "Nizamnamə"
-msgstr "Constitution"
+msgid "Nizamnamə və Qaydalar"
+msgstr "Constitution & Bylaws"
+
+#: .\templates\base\layout.html:138
+msgid "Daimi Komitələr"
+msgstr "Standing Committees"
 
 #: .\templates\base\layout.html:139
 msgid "Layihələr"
@@ -444,15 +837,15 @@ msgid "İdarə Heyəti"
 msgstr "Team of Officials"
 
 #: .\templates\base\layout.html:142
-msgid "Müşahidə Heyəti"
-msgstr "Supervisory Board"
+msgid "Nəzarət Şurası"
+msgstr "Supervisory Council"
 
 #: .\templates\base\layout.html:143
 msgid "Məzunlarımız"
 msgstr "Our Alumni"
 
 #: .\templates\base\layout.html:144
-msgid "Əməkdaşlıqlarımız"
+msgid "Tərəfdaşlarımız"
 msgstr "Our partnerships"
 
 #: .\templates\base\layout.html:168
@@ -465,9 +858,9 @@ msgid ""
 "Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
 "2007-ci ildən bu federasiyanın tamhüquqlu üzvüyük."
 msgstr ""
-"We have functioned within IFMSA (International Federation of Medical "
+"We have functioned within the IFMSA (International Federation of Medical "
 "Students’ Associations) as a candidate member between the years 2005-2006. "
-"We became a fully fledged member in 2007."
+"We became a fully-fledged member in 2007."
 
 #: .\templates\base\layout.html:170
 msgid "Əlaqə: "
