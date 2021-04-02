@@ -474,7 +474,7 @@ msgstr ""
 
 #: .\templates\base\index\index.html:54
 msgid "AzerMDS-ə xoş gəldiniz!"
-msgstr "Welcome to AzerMDS"
+msgstr "Welcome to AzerMDS!"
 
 #: .\templates\base\index\index.html:55
 msgid ""
@@ -846,7 +846,7 @@ msgstr "Our Alumni"
 
 #: .\templates\base\layout.html:144
 msgid "Tərəfdaşlarımız"
-msgstr "Our partnerships"
+msgstr "Our Partners"
 
 #: .\templates\base\layout.html:168
 msgid "HAQQIMIZDA"
