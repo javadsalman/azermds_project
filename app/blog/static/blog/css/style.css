@@ -29,11 +29,25 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
+.main-post {
+    height: 100% !important;
+}
+
 .main-post img{
     display: block;
     max-width: 100% !important;
     height: auto !important;
 }
+
+@media only screen and (max-width: 1000px) {
+    .main-post img{
+        float: unset !important;
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+}
+
  .font-style {
      font-family: 'Nunito', sans-serif;
      font-size: 16px;

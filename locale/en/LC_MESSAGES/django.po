@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 16:59+0400\n"
+"POT-Creation-Date: 2021-04-04 15:40+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Ana Səhifə"
 msgstr "Home"
 
 #: .\app\blog\templates\blog.html:40 .\app\blog\templates\blog.html:42
-#: .\templates\base\layout.html:150
+#: .\templates\base\layout.html:148
 msgid "Bloq"
 msgstr "Blog"
 
@@ -485,7 +485,7 @@ msgstr "We are here to learn new skills, gain knowledge and teach others."
 #: .\templates\base\index\index.html:56
 msgid ""
 "Biz ölkəmizdə həyatını yalnız tibbin öyrənilməsinə deyil, həm də cinsi "
-"təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə,"
+"təhsilə, həmkarlarının təhsilinə, digər ölkələrin səhiyyəsini öyrənməyə, "
 "beynəlxalq araşdırmalara, ictimai sağlamlığa, insan hüquqları uğrunda "
 "mübarizəyə həsr etmiş həkimlər yetişdiririk."
 msgstr ""
@@ -671,13 +671,13 @@ msgid ""
 "edərək, mövcud tibbi mövzulara mövqe bildirərək və tibb sahəsində şəbəkələr "
 "quraraq hadisələri öz əllərinizə ala biləcəksiniz."
 msgstr ""
-"By joining AzerMDS you can enhance not only your medical knowledge and "
-"skills, but also explore global healthcare systems closely, develop "
-"research, communication, and leadership skills. Also, you can create a new "
-"environment for yourself, discover the world and have access to a range of "
-"international opportunities. In addition to these, by organizing events, "
-"running projects actively, drawing up policy papers related to medical "
-"topics, and networking you may take the matters into your own hands."
+"By joining AzerMDS, you can enhance your medical knowledge and skills and "
+"explore global healthcare systems closely and develop research, "
+"communication, and leadership skills. Also, you can create a new environment "
+"for yourself, discover the world and have access to a range of international "
+"opportunities. In addition to these, by organizing events, running projects "
+"actively, drawing up policy papers related to medical topics, and "
+"networking, you may take matters into your own hands."
 
 #: .\templates\base\index\index.html:542
 msgid "Üzv olmaq üçün ingilis dili vacibdirmi?"
@@ -825,34 +825,26 @@ msgid "Daimi Komitələr"
 msgstr "Standing Committees"
 
 #: .\templates\base\layout.html:139
-msgid "Layihələr"
-msgstr "Projects"
-
-#: .\templates\base\layout.html:140
 msgid "Beynəlxalq Təmsilçilik"
 msgstr "External Representation"
 
+#: .\templates\base\layout.html:140
+msgid "Strukturumuz"
+msgstr "Our Leadership"
+
 #: .\templates\base\layout.html:141
-msgid "İdarə Heyəti"
-msgstr "Team of Officials"
-
-#: .\templates\base\layout.html:142
-msgid "Nəzarət Şurası"
-msgstr "Supervisory Council"
-
-#: .\templates\base\layout.html:143
 msgid "Məzunlarımız"
 msgstr "Our Alumni"
 
-#: .\templates\base\layout.html:144
+#: .\templates\base\layout.html:142
 msgid "Tərəfdaşlarımız"
 msgstr "Our Partners"
 
-#: .\templates\base\layout.html:168
+#: .\templates\base\layout.html:166
 msgid "HAQQIMIZDA"
 msgstr "ABOUT US"
 
-#: .\templates\base\layout.html:169
+#: .\templates\base\layout.html:167
 msgid ""
 "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri "
 "Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
@@ -862,10 +854,11 @@ msgstr ""
 "Students’ Associations) as a candidate member between the years 2005-2006. "
 "We became a fully-fledged member in 2007."
 
-#: .\templates\base\layout.html:170
+#: .\templates\base\layout.html:168
 msgid "Əlaqə: "
 msgstr "Contact: "
 
-#: .\templates\base\layout.html:185
+#: .\templates\base\layout.html:183
 msgid "Bütün huquqları qorunur © azermds.org"
-msgstr "All right reserved © azermds.org"
+msgstr "All rights reserved © azermds.org"
+
