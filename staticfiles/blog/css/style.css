@@ -39,6 +39,10 @@ RESPONSIVE
     height: auto !important;
 }
 
+.main-post [referrerpolicy] {
+    width: inherit !important;
+}
+
 @media only screen and (max-width: 1000px) {
     .main-post img{
         float: unset !important;

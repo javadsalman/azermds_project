@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 21:11+0400\n"
+"POT-Creation-Date: 2021-04-16 00:15+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -459,9 +459,9 @@ msgstr ""
 msgid "Delete selected %(model)s"
 msgstr ""
 
-#: .\templates\base\index\index.html:10 .\templates\base\index\index.html:17
+#: .\templates\base\index\index.html:10 .\templates\base\index\index.html:26
 msgid "AzerMDS - Həkimlər və Təbib Tələbələr İctimai Birliyi"
-msgstr "AzerMDS: Azerbaijan Medical Doctors and Students Association"
+msgstr "AzerMDS - Medical Doctors and Students Association"
 
 #: .\templates\base\index\index.html:11 .\templates\base\index\index.html:18
 msgid ""
@@ -471,6 +471,10 @@ msgstr ""
 "We are the only organization that aims at making the educational life of "
 "medical students in Azerbaijan more fruitful and represent them at the local "
 "and international level."
+
+#: .\templates\base\index\index.html:17
+msgid "AzerMDS - Azərbaycan Həkimlər və Təbib Tələbələr İctimai Birliyi"
+msgstr "AzerMDS - Azerbaijan Medical Doctors and Students Association"
 
 #: .\templates\base\index\index.html:54
 msgid "AzerMDS-ə xoş gəldiniz!"
@@ -593,7 +597,11 @@ msgid ""
 "biliklərini artırmaq və həm iş şəraitində, həm də gündəlik həyatda insan "
 "hüquqları və etika qaydalarına uyğun hərəkət etmək üçün üsul və bacarıqları "
 "öyrətməyi hədəfləyir."
-msgstr "The committee aims to increase students' knowledge of human rights and peacebuilding and to teach them the knowledge and skills to act in accordance with human rights and courtesy rules, both in workplace and everyday life."
+msgstr ""
+"The committee aims to increase students' knowledge of human rights and "
+"peacebuilding and to teach them the knowledge and skills to act in "
+"accordance with human rights and courtesy rules, both in workplace and "
+"everyday life."
 
 #: .\templates\base\index\index.html:362
 msgid "Mübadilə Programı"
@@ -648,7 +656,18 @@ msgid ""
 "kömək edəcək. Anketin sonunda təqdim olunan Daxili Davranış Kodeksinə nəzər "
 "salın və düyməyə klikləyərək oradakı şərtləri qəbul etdiyinizi bildirin. "
 "Anketi həm ingiliscə, həm də azərbaycanca doldura bilərsiniz."
-msgstr "You're required to fill out the AzerMDS membership form to become a member. The form remains active throughout the membership week, announced once a month. You can find out about our membership weeks by following our social media accounts. You can access the membership form by clicking on the website's \"Join Us\" button. When filling out the form, we recommend you provide a thorough explanation under each section and get yourself acquainted with the presentations carefully. It will help you choose a membership type (active or passive) that suits you the most. You're required to check the Internal Code of Conduct that is introduced to you at the end of the form and then accept the terms. You can submit the form both in English and in Azerbaijani."
+msgstr ""
+"You're required to fill out the AzerMDS membership form to become a member. "
+"The form remains active throughout the membership week, announced once a "
+"month. You can find out about our membership weeks by following our social "
+"media accounts. You can access the membership form by clicking on the "
+"website's \"Join Us\" button. When filling out the form, we recommend you "
+"provide a thorough explanation under each section and get yourself "
+"acquainted with the presentations carefully. It will help you choose a "
+"membership type (active or passive) that suits you the most. You're required "
+"to check the Internal Code of Conduct that is introduced to you at the end "
+"of the form and then accept the terms. You can submit the form both in "
+"English and in Azerbaijani."
 
 #: .\templates\base\index\index.html:525
 msgid "Üzvlüyün mənə hansı müsbət təsirləri olacaq?"
@@ -664,7 +683,13 @@ msgid ""
 "edərək, mövcud tibbi mövzulara mövqe bildirərək və tibb sahəsində şəbəkələr "
 "quraraq hadisələri öz əllərinizə ala biləcəksiniz."
 msgstr ""
-"By joining AzerMDS, you can enhance not only your medical knowledge and skills but also explore global healthcare systems closely, develop research, communication, and leadership skills. Also, you can create a new environment for yourself, discover the world and have access to a range of international opportunities. Additionally, by organizing events, running projects actively, drawing up policy papers related to medical topics, and networking, you may take matters into your own hands."
+"By joining AzerMDS, you can enhance not only your medical knowledge and "
+"skills but also explore global healthcare systems closely, develop research, "
+"communication, and leadership skills. Also, you can create a new environment "
+"for yourself, discover the world and have access to a range of international "
+"opportunities. Additionally, by organizing events, running projects "
+"actively, drawing up policy papers related to medical topics, and "
+"networking, you may take matters into your own hands."
 
 #: .\templates\base\index\index.html:542
 msgid "Üzv olmaq üçün ingilis dili biliyi vacibdirmi?"
@@ -693,7 +718,10 @@ msgid ""
 "aktiv üzvlüyün öhdəliklərinin yerinə yetirilməsi üzvün fərdi bacarıqlarından "
 "və keyfiyyətindən asılıdır."
 msgstr ""
-"AzerMDS is a non-profit founded by students for students. Therefore, classes and exams are taken into consideration, but correct time management and preserving active membership depend entirely on individual skills and members' quality."
+"AzerMDS is a non-profit founded by students for students. Therefore, classes "
+"and exams are taken into consideration, but correct time management and "
+"preserving active membership depend entirely on individual skills and "
+"members' quality."
 
 #: .\templates\base\index\index.html:576
 msgid "Komitə seçəndə nələrə fikir verməliyəm?"
@@ -708,7 +736,12 @@ msgid ""
 "Həmçinin daimi komitə seçərkən öz bacarıqlarınızın, gələcək planlarınızın və "
 "maraqlarınızın həmin komitə ilə nə qədər uyğun olduğuna da diqqət edin."
 msgstr ""
-"First of all, get familiar with the presentations about membership and standing committees in the membership form. This will help you have a first impression of the standing committees. Afterward, you can watch our \"101\" webinar series about standing committees from our YouTube channel. We also recommend considering how much your personal interests, skills, and future plans match the standing committee you want to join."
+"First of all, get familiar with the presentations about membership and "
+"standing committees in the membership form. This will help you have a first "
+"impression of the standing committees. Afterward, you can watch our \"101\" "
+"webinar series about standing committees from our YouTube channel. We also "
+"recommend considering how much your personal interests, skills, and future "
+"plans match the standing committee you want to join."
 
 #: .\templates\base\index\index.html:593
 msgid "Mübadilə Proqramlarına necə qoşulmaq olar?"
@@ -809,6 +842,10 @@ msgstr "Our Alumni"
 msgid "Tərəfdaşlarımız"
 msgstr "Our Partners"
 
+#: .\templates\base\layout.html:132
+msgid "Nə edirik"
+msgstr "What We Do"
+
 #: .\templates\base\layout.html:135
 msgid "Daimi Komitələr"
 msgstr "Standing Committees"
@@ -820,6 +857,10 @@ msgstr "Training"
 #: .\templates\base\layout.html:137
 msgid "Qalereya"
 msgstr "Gallery"
+
+#: .\templates\base\layout.html:142
+msgid "Beynəlxalq"
+msgstr "International"
 
 #: .\templates\base\layout.html:145
 msgid "Təmsilçilik"

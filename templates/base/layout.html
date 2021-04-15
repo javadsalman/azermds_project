@@ -128,7 +128,7 @@
                 </li>
                 <li class="nav-item active dropdown text-center">
                     <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mdsblue fw-500">Nə edirik</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
+                        <span class="mdsblue fw-500">{% trans "Nə edirik" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
                         <a class="dropdown-item" href="{% url 'article' "15" "daimi-komiteler" %}">{% trans "Daimi Komitələr" %}</a>
@@ -138,12 +138,12 @@
                 </li>
                 <li class="nav-item active dropdown text-center">
                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mdsblue fw-500">Beynəlxalq</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
+                        <span class="mdsblue fw-500">{% trans "Beynəlxalq" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
                     <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
                         <a class="dropdown-item" href="{% url 'article' "17" "temsilcilik" %}">{% trans "Təmsilçilik" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "5" "mubadile" %}">{% trans "Mübadilə" %}</a>
-                        <a class="dropdown-item" href="{% url 'article' "19" "ifmsa" %}">"IFMSA"</a>
+                        <a class="dropdown-item" href="{% url 'article' "19" "ifmsa" %}">IFMSA</a>
                         <a class="dropdown-item" href="{% url 'article' "32" "imkanlar" %}">{% trans "İmkanlar" %}</a>
 
                     </div>
