@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-04 15:40+0400\n"
+"POT-Creation-Date: 2021-04-15 21:11+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Ana Səhifə"
 msgstr "Home"
 
 #: .\app\blog\templates\blog.html:40 .\app\blog\templates\blog.html:42
-#: .\templates\base\layout.html:148
+#: .\templates\base\layout.html:156
 msgid "Bloq"
 msgstr "Blog"
 
@@ -546,7 +546,7 @@ msgstr ""
 "medical students and familiarize them with new healthcare systems."
 
 #: .\templates\base\index\index.html:153
-msgid "İctimai Səhiyyə üzrə Daimi Komitə"
+msgid "İctimai Sağlamlıq üzrə Daimi Komitə"
 msgstr "Standing Committee on Public Health"
 
 #: .\templates\base\index\index.html:156
@@ -593,7 +593,7 @@ msgid ""
 "biliklərini artırmaq və həm iş şəraitində, həm də gündəlik həyatda insan "
 "hüquqları və etika qaydalarına uyğun hərəkət etmək üçün üsul və bacarıqları "
 "öyrətməyi hədəfləyir."
-msgstr ""
+msgstr "The committee aims to increase students' knowledge of human rights and peacebuilding and to teach them the knowledge and skills to act in accordance with human rights and courtesy rules, both in workplace and everyday life."
 
 #: .\templates\base\index\index.html:362
 msgid "Mübadilə Programı"
@@ -632,33 +632,26 @@ msgid "TEZ-TEZ VERİLƏN SUALLAR"
 msgstr "COMMONLY ASKED QUESTIONS"
 
 #: .\templates\base\index\index.html:508
-msgid "AzerMDS-ə necə üzv ola bilərəm?"
-msgstr "How can I become a member of AzerMDS?"
+msgid "Təşkilata necə üzv ola bilərəm?"
+msgstr "How can I become a member?"
 
 #: .\templates\base\index\index.html:517
 msgid ""
 "Üzv olmaq üçün AzerMDS üzvlük anketini doldurmaq lazımdır. Bu anket hər ay "
-"üzvlük həftəsi müddətində aktiv olur. Sosial media hesablarımızı izləyərək "
-"hər ay açılan üzvlük həftəmiz barədə xəbər tuta bilərsiniz. Anketi "
-"doldurarkən qarşınıza çıxacaq bütün bəndləri ətraflı doldurmağı, "
-"prezentasiyalarla diqqətlə tanış olmağı tövsiyə edirik. Bu, sizə özünüzə "
-"uyğun üzvlük növünü (aktiv və ya passiv) seçməyə kömək edəcək. Anketin "
-"sonunda təqdim olunan Daxili Davranış Kodeksinə nəzər salırsınız və şərtləri "
-"qəbul edirsiniz. Anketi həm ingiliscə, həm də azərbaycanca doldura "
-"bilərsiniz."
-msgstr ""
-"You’re required to fill out the AzerMDS membership form to become a member. "
-"The form remains active throughout the membership week announced once a "
-"month. You can find out about our membership weeks by following our social "
-"media accounts. When filling out the form we recommend you to provide a "
-"thorough explanation and get yourselves acquainted with the presentations "
-"carefully. It will help you choose the membership type (active or passive) "
-"that suits you the most. You have to check the Internal Code of Conduct that "
-"is introduced to you at the end of the form and then accept the terms. You "
-"can fill out the form both in English and in Azerbaijani languages"
+"üzvlük həftəsi ərzində aktiv olur. Sosial media hesablarımızı izləyərək "
+"üzvlük həftələrimizin nə zaman açıldığı barədə xəbər tuta bilərsiniz. Anketə "
+"sosial media hesabında yerləşdirdiyimiz linkdən və ya saytımızdakı Bizə "
+"qoşul düyməsinə klikləyərək keçid edə bilərsiniz. Anketi doldurarkən "
+"qarşınıza çıxan bütün bəndləri ətraflı doldurmağı, prezentasiyalarla "
+"diqqətlə tanış olmağı tövsiyə edirik. Bu, sizə özünüzəuyğun üzvlük növünü "
+"(aktiv və ya passiv) və aktiv üzv olduğunuz təqdirdə uyğun komitəni seçməyə "
+"kömək edəcək. Anketin sonunda təqdim olunan Daxili Davranış Kodeksinə nəzər "
+"salın və düyməyə klikləyərək oradakı şərtləri qəbul etdiyinizi bildirin. "
+"Anketi həm ingiliscə, həm də azərbaycanca doldura bilərsiniz."
+msgstr "You're required to fill out the AzerMDS membership form to become a member. The form remains active throughout the membership week, announced once a month. You can find out about our membership weeks by following our social media accounts. You can access the membership form by clicking on the website's \"Join Us\" button. When filling out the form, we recommend you provide a thorough explanation under each section and get yourself acquainted with the presentations carefully. It will help you choose a membership type (active or passive) that suits you the most. You're required to check the Internal Code of Conduct that is introduced to you at the end of the form and then accept the terms. You can submit the form both in English and in Azerbaijani."
 
 #: .\templates\base\index\index.html:525
-msgid "AzerMDS-ə qoşulmağın mənə hansı müsbət təsirləri olacaq?"
+msgid "Üzvlüyün mənə hansı müsbət təsirləri olacaq?"
 msgstr "What does the membership entail?"
 
 #: .\templates\base\index\index.html:534
@@ -671,17 +664,11 @@ msgid ""
 "edərək, mövcud tibbi mövzulara mövqe bildirərək və tibb sahəsində şəbəkələr "
 "quraraq hadisələri öz əllərinizə ala biləcəksiniz."
 msgstr ""
-"By joining AzerMDS, you can enhance your medical knowledge and skills and "
-"explore global healthcare systems closely and develop research, "
-"communication, and leadership skills. Also, you can create a new environment "
-"for yourself, discover the world and have access to a range of international "
-"opportunities. In addition to these, by organizing events, running projects "
-"actively, drawing up policy papers related to medical topics, and "
-"networking, you may take matters into your own hands."
+"By joining AzerMDS, you can enhance not only your medical knowledge and skills but also explore global healthcare systems closely, develop research, communication, and leadership skills. Also, you can create a new environment for yourself, discover the world and have access to a range of international opportunities. Additionally, by organizing events, running projects actively, drawing up policy papers related to medical topics, and networking, you may take matters into your own hands."
 
 #: .\templates\base\index\index.html:542
-msgid "Üzv olmaq üçün ingilis dili vacibdirmi?"
-msgstr "Is English necessary for becoming a member?"
+msgid "Üzv olmaq üçün ingilis dili biliyi vacibdirmi?"
+msgstr "Is the command of English a prerequisite for the membership?"
 
 #: .\templates\base\index\index.html:551
 msgid ""
@@ -695,7 +682,7 @@ msgstr ""
 "required."
 
 #: .\templates\base\index\index.html:559
-msgid "AzerMDS-ə aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?"
+msgid "Aktiv üzv kimi qeydiyyatdan keçmək dərslərimə mane olacaqmı?"
 msgstr "Does an active membership pose a threat to my success at university?"
 
 #: .\templates\base\index\index.html:568
@@ -706,10 +693,7 @@ msgid ""
 "aktiv üzvlüyün öhdəliklərinin yerinə yetirilməsi üzvün fərdi bacarıqlarından "
 "və keyfiyyətindən asılıdır."
 msgstr ""
-"AzerMDS was founded by students, for students, therefore, classes and exams "
-"are taken into consideration but correct time management and preserving "
-"active membership entirely depend on individual skills and the quality of "
-"members."
+"AzerMDS is a non-profit founded by students for students. Therefore, classes and exams are taken into consideration, but correct time management and preserving active membership depend entirely on individual skills and members' quality."
 
 #: .\templates\base\index\index.html:576
 msgid "Komitə seçəndə nələrə fikir verməliyəm?"
@@ -724,10 +708,7 @@ msgid ""
 "Həmçinin daimi komitə seçərkən öz bacarıqlarınızın, gələcək planlarınızın və "
 "maraqlarınızın həmin komitə ilə nə qədər uyğun olduğuna da diqqət edin."
 msgstr ""
-"First of all, get familiar with presentations about memberships and standing "
-"committees in the membership form. This will help you have a first "
-"impression about standing committees. Afterwards, you can watch our \"101\" "
-"webinar series about standing committees from youtube  channel"
+"First of all, get familiar with the presentations about membership and standing committees in the membership form. This will help you have a first impression of the standing committees. Afterward, you can watch our \"101\" webinar series about standing committees from our YouTube channel. We also recommend considering how much your personal interests, skills, and future plans match the standing committee you want to join."
 
 #: .\templates\base\index\index.html:593
 msgid "Mübadilə Proqramlarına necə qoşulmaq olar?"
@@ -788,63 +769,75 @@ msgstr "FOLLOW US"
 msgid "Cəfər Cabbarlı küçəsi 609, Globus Center 13-cü mərtəbə"
 msgstr "13th Floor, Globus Center, 609 Jafar Jabbarli street"
 
-#: .\templates\base\layout.html:108 .\templates\base\layout.html:122
-msgid "Haqqında"
-msgstr "About"
+#: .\templates\base\layout.html:104
+msgid "Ana səhifə"
+msgstr "Home"
 
 #: .\templates\base\layout.html:109
+msgid "Haqqımızda"
+msgstr "About"
+
+#: .\templates\base\layout.html:112
+msgid "Nizamnamə"
+msgstr "Constitutions"
+
+#: .\templates\base\layout.html:113
+msgid "Qaydalar"
+msgstr "Bylaws"
+
+#: .\templates\base\layout.html:114
 msgid "Tarix"
 msgstr "History"
 
-#: .\templates\base\layout.html:110
-msgid "Yeniliklər"
-msgstr "News"
-
-#: .\templates\base\layout.html:111
-msgid "Qalereya"
-msgstr "Gallery"
-
-#: .\templates\base\layout.html:112
-msgid "Mübadilə Proqramı"
-msgstr "Exchange Program"
-
-#: .\templates\base\layout.html:114
+#: .\templates\base\layout.html:116
 msgid "Bizə qoşul"
 msgstr "Join Us"
 
-#: .\templates\base\layout.html:134
+#: .\templates\base\layout.html:122
 msgid "Biz kimik"
 msgstr "Who We Are"
 
-#: .\templates\base\layout.html:137
-msgid "Nizamnamə və Qaydalar"
-msgstr "Constitution & Bylaws"
-
-#: .\templates\base\layout.html:138
-msgid "Daimi Komitələr"
-msgstr "Standing Committees"
-
-#: .\templates\base\layout.html:139
-msgid "Beynəlxalq Təmsilçilik"
-msgstr "External Representation"
-
-#: .\templates\base\layout.html:140
-msgid "Strukturumuz"
+#: .\templates\base\layout.html:125
+msgid "Rəhbərliyimiz"
 msgstr "Our Leadership"
 
-#: .\templates\base\layout.html:141
+#: .\templates\base\layout.html:126
 msgid "Məzunlarımız"
 msgstr "Our Alumni"
 
-#: .\templates\base\layout.html:142
+#: .\templates\base\layout.html:127
 msgid "Tərəfdaşlarımız"
 msgstr "Our Partners"
 
-#: .\templates\base\layout.html:166
+#: .\templates\base\layout.html:135
+msgid "Daimi Komitələr"
+msgstr "Standing Committees"
+
+#: .\templates\base\layout.html:136
+msgid "Təlim"
+msgstr "Training"
+
+#: .\templates\base\layout.html:137
+msgid "Qalereya"
+msgstr "Gallery"
+
+#: .\templates\base\layout.html:145
+msgid "Təmsilçilik"
+msgstr "Representation"
+
+#: .\templates\base\layout.html:146
+msgid "Mübadilə"
+msgstr "Exchange"
+
+#: .\templates\base\layout.html:148
+msgid "İmkanlar"
+msgstr "Opportunities"
+
+#: .\templates\base\layout.html:174
 msgid "HAQQIMIZDA"
 msgstr "ABOUT US"
 
-#: .\templates\base\layout.html:167
+#: .\templates\base\layout.html:175
 msgid ""
 "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri "
 "Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
@@ -854,11 +847,10 @@ msgstr ""
 "Students’ Associations) as a candidate member between the years 2005-2006. "
 "We became a fully-fledged member in 2007."
 
-#: .\templates\base\layout.html:168
+#: .\templates\base\layout.html:176
 msgid "Əlaqə: "
 msgstr "Contact: "
 
-#: .\templates\base\layout.html:183
+#: .\templates\base\layout.html:191
 msgid "Bütün huquqları qorunur © azermds.org"
 msgstr "All rights reserved © azermds.org"
-
