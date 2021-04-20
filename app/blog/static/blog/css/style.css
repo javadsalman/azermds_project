@@ -42,6 +42,7 @@ RESPONSIVE
 .main-post [referrerpolicy] {
     width: inherit !important;
     border: none;
+    display: inline-block;
 }
 
 .image-figure {
