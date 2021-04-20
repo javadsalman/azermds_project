@@ -1,8 +1,8 @@
 // share button scripts
-$(function(){
+$(function () {
     const url = encodeURIComponent(window.location.href);
-    function popShareButton(id, link, name ){
-        $(`#${id}`).click(function(){
+    function popShareButton(id, link, name) {
+        $(`#${id}`).click(function () {
             window.open(link + url, `${name}-share-dialog`, 'width=800,height=600');
             return false;
         })
@@ -16,7 +16,7 @@ $(function(){
 
     const copyButton = $('#copy-url');
     copyButton.tooltip();
-    copyButton.click(function(){
+    copyButton.click(function () {
         const newInput = $('<input>')
         newInput.attr({
             id: 'input-for-url',
@@ -30,9 +30,44 @@ $(function(){
         rawInput.setSelectionRange(0, rawInput.value.length);
         document.execCommand('copy');
         newInput.remove();
-        setTimeout(()=>{
+        setTimeout(() => {
             $(this).tooltip('hide');
         }, 800)
     })
-    
+
 })
+
+// Editing Article with scripts
+
+const imageController = function () {
+    const images = $('.main-post img');
+
+
+    function changeImage(image) {
+        const altText = image.attr('alt')
+
+        if (altText) {
+            const imageStyle = image.attr('style')
+            image.attr('style', '')
+    
+            const figure = $(`<figure class="image-figure" style="${imageStyle}";></figure>`)
+            const figcaption = $(`<figcaption class=" image-caption"><p class="m-0 py-2 py-lg-1">${altText}</p></figcaption>`)
+            const new_image = image.clone()
+            figure.append(new_image)
+            figure.append(figcaption)
+            image.replaceWith(figure)
+        }
+
+    }
+
+    function init() {
+        for (let image of images) {
+            changeImage($(image));
+        }
+    }
+
+    return {
+        init
+    }
+}()
+imageController.init();

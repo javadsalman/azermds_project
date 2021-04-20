@@ -120,9 +120,10 @@
                     <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mdsblue fw-500">{% trans "Biz kimik" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
-                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -30px">
                         <a class="dropdown-item" href="{% url 'article' "18" "rəhbərliyimiz" %}">{% trans "Rəhbərliyimiz" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "20" "mezunlarimiz" %}">{% trans "Məzunlarımız" %}</a>
+                        {% comment %} <a class="dropdown-item" href="{% url 'article' "000" "saytimiz" %}">{% trans "Saytımız" %}</a> {% endcomment %}
                         <a class="dropdown-item" href="{% url 'article' "21" "terefdaslarimiz" %}">{% trans "Tərəfdaşlarımız" %}</a>
                     </div>
                 </li>
@@ -130,7 +131,7 @@
                     <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mdsblue fw-500">{% trans "Nə edirik" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
-                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -45px">
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
                         <a class="dropdown-item" href="{% url 'article' "15" "daimi-komiteler" %}">{% trans "Daimi Komitələr" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "31" "təlim" %}">{% trans "Təlim" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "4" "qaleriya" %}">{% trans "Qalereya" %}</a>
@@ -140,7 +141,7 @@
                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mdsblue fw-500">{% trans "Beynəlxalq" %}</span> <i class="fas fa-caret-down mdsblue" style="font-size: 13px;"></i>
                     </a>
-                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -35px">
+                    <div class="dropdown-menu text-center rounded-0" aria-labelledby="navbarDropdown" style="left: -25px">
                         <a class="dropdown-item" href="{% url 'article' "17" "temsilcilik" %}">{% trans "Təmsilçilik" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "5" "mubadile" %}">{% trans "Mübadilə" %}</a>
                         <a class="dropdown-item" href="{% url 'article' "19" "ifmsa" %}">IFMSA</a>

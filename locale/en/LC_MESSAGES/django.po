@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 00:15+0400\n"
+"POT-Creation-Date: 2021-04-20 19:40+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Ana Səhifə"
 msgstr "Home"
 
 #: .\app\blog\templates\blog.html:40 .\app\blog\templates\blog.html:42
-#: .\templates\base\layout.html:156
+#: .\templates\base\layout.html:158
 msgid "Bloq"
 msgstr "Blog"
 
@@ -555,7 +555,7 @@ msgstr "Standing Committee on Public Health"
 
 #: .\templates\base\index\index.html:156
 msgid ""
-"Tibb Tələbələrinin İctimai Səhiyyə problemlərinin həllində, maarifləndirmə "
+"Tibb Tələbələrinin İctimai Sağlamlıq problemlərinin həllində, maarifləndirmə "
 "işlərində aktiv iştirakını hədəfləyir."
 msgstr ""
 "This committee aims to actively engage medical students in public health "
@@ -782,7 +782,7 @@ msgid ""
 "yeriniz və gündə bir dəfə qidalanma daxildir. Bəzən qida təmin oluna "
 "bilmədikdə, bu xidmət cib xərcliyi ilə əvəzlənə bilər. Bundan əlavə sizə "
 "həmin ölkədə kömək edəcək əlaqələndirici şəxs və təcrübənizə nəzarət edəcək "
-"tyutor ayrılır. Əksər halarda, proqrama sosial fəaliyyətlər də daxildir."
+"tyutor ayrılır. Əksər hallarda, proqrama sosial fəaliyyətlər də daxildir."
 msgstr ""
 "The exchange fee (approximately €300-590 participation fee depending on "
 "country of preference) includes the cost of your one-month-long experience "
@@ -800,7 +800,7 @@ msgstr "FOLLOW US"
 
 #: .\templates\base\layout.html:43 .\templates\base\layout.html:47
 msgid "Cəfər Cabbarlı küçəsi 609, Globus Center 13-cü mərtəbə"
-msgstr "13th Floor, Globus Center, 609 Jafar Jabbarli street"
+msgstr "13th Floor, Globus Center, 609 Jafar Jabbarli Street"
 
 #: .\templates\base\layout.html:104
 msgid "Ana səhifə"
@@ -812,7 +812,7 @@ msgstr "About"
 
 #: .\templates\base\layout.html:112
 msgid "Nizamnamə"
-msgstr "Constitutions"
+msgstr "Constitution"
 
 #: .\templates\base\layout.html:113
 msgid "Qaydalar"
@@ -838,47 +838,47 @@ msgstr "Our Leadership"
 msgid "Məzunlarımız"
 msgstr "Our Alumni"
 
-#: .\templates\base\layout.html:127
+#: .\templates\base\layout.html:129
 msgid "Tərəfdaşlarımız"
 msgstr "Our Partners"
 
-#: .\templates\base\layout.html:132
+#: .\templates\base\layout.html:134
 msgid "Nə edirik"
 msgstr "What We Do"
 
-#: .\templates\base\layout.html:135
+#: .\templates\base\layout.html:137
 msgid "Daimi Komitələr"
 msgstr "Standing Committees"
 
-#: .\templates\base\layout.html:136
+#: .\templates\base\layout.html:138
 msgid "Təlim"
 msgstr "Training"
 
-#: .\templates\base\layout.html:137
+#: .\templates\base\layout.html:139
 msgid "Qalereya"
 msgstr "Gallery"
 
-#: .\templates\base\layout.html:142
+#: .\templates\base\layout.html:144
 msgid "Beynəlxalq"
 msgstr "International"
 
-#: .\templates\base\layout.html:145
+#: .\templates\base\layout.html:147
 msgid "Təmsilçilik"
 msgstr "Representation"
 
-#: .\templates\base\layout.html:146
+#: .\templates\base\layout.html:148
 msgid "Mübadilə"
 msgstr "Exchange"
 
-#: .\templates\base\layout.html:148
+#: .\templates\base\layout.html:150
 msgid "İmkanlar"
 msgstr "Opportunities"
 
-#: .\templates\base\layout.html:174
+#: .\templates\base\layout.html:176
 msgid "HAQQIMIZDA"
 msgstr "ABOUT US"
 
-#: .\templates\base\layout.html:175
+#: .\templates\base\layout.html:177
 msgid ""
 "Biz 2005-2006-cı illər arasında IFMSA (Beynəlxalq Tibb Tələbələri "
 "Assosiasiyaları Federasiyası)-da namizəd üzv kimi fəaliyyət göstərmişik. "
@@ -888,10 +888,10 @@ msgstr ""
 "Students’ Associations) as a candidate member between the years 2005-2006. "
 "We became a fully-fledged member in 2007."
 
-#: .\templates\base\layout.html:176
+#: .\templates\base\layout.html:178
 msgid "Əlaqə: "
 msgstr "Contact: "
 
-#: .\templates\base\layout.html:191
+#: .\templates\base\layout.html:193
 msgid "Bütün huquqları qorunur © azermds.org"
 msgstr "All rights reserved © azermds.org"

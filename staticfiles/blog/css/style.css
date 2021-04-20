@@ -35,21 +35,50 @@ RESPONSIVE
 
 .main-post img{
     display: block;
-    max-width: 100% !important;
+    max-width: 100%;
     height: auto !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
 }
 
 .main-post [referrerpolicy] {
     width: inherit !important;
 }
 
+.image-figure {
+    width: inherit;
+}
+
+.image-caption {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
 @media only screen and (max-width: 1000px) {
-    .main-post img{
-        float: unset !important;
-        width: 100% !important;
+    
+    .image-figure {
+        width: auto !important;
+        height: auto !important;
         margin: 0 !important;
         margin-bottom: 20px !important;
+        width: 100% !important;
+        float: unset !important;
     }
+    
+    .image-figure ~ br {
+       display: none !important;
+    }
+
+    #text {
+        display: none;
+    }
+
 }
 
  .font-style {

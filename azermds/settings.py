@@ -194,8 +194,11 @@ CKEDITOR_CONFIGS = {
     'contentsCss': (
         '/staticfiles/ckeditor/customization-files/nunito_font.css',
         '/staticfiles/ckeditor/customization-files/bootstrap.css',
-        '/staticfiles/ckeditor/customization-files/style.css',
+        '/staticfiles/blog/css/style.css',
     ),
+    'contentJs': (
+        'staticfiles/blog/js/article.js'
+    )
 },
 }
 
