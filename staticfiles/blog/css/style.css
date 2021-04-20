@@ -37,8 +37,6 @@ RESPONSIVE
     display: block;
     max-width: 100%;
     height: auto !important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: none;
 }
 
 .main-post [referrerpolicy] {
@@ -48,6 +46,11 @@ RESPONSIVE
 
 .image-figure {
     width: inherit;
+}
+
+.image-figure img {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: none;
 }
 
 .image-caption {
@@ -62,6 +65,14 @@ RESPONSIVE
 }
 
 @media only screen and (max-width: 1000px) {
+    .img-without-caption {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    .img-without-caption ~ br {
+        display: none !important;
+    }
     
     .image-figure {
         width: auto !important;
