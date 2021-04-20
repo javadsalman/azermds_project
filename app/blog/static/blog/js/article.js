@@ -45,12 +45,15 @@ const imageController = function () {
 
     function changeImage(image) {
         const altText = image.attr('alt')
-
-        if (altText) {
+        
+        if (image.attr('referrerpolicy')) {
+            return null
+        }
+        else if (!altText) {
+            image.addClass('img-without-caption')
+        }
+        else {
             // excluding emogies. Emogies have refererpolicy attribute but other images not
-            if (image.attr('referrerpolicy')){
-                return
-            }
             const imageStyle = image.attr('style')
             image.attr('style', '')
     
