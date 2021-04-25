@@ -29,12 +29,22 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
+
+/* Custom Start */
+
+
+strong {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #212631;
+    font-weight: 900 !important;
+}
+
 .main-post {
     height: 100% !important;
 }
 
 .main-post img{
-    display: block;
+    display: inline-block;
     max-width: 100%;
     height: auto !important;
 }
@@ -88,11 +98,9 @@ RESPONSIVE
        display: none !important;
     }
 
-    #text {
-        display: none;
-    }
-
 }
+
+/* Custom End */
 
  .font-style {
      font-family: 'Nunito', sans-serif;

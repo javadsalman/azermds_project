@@ -26,7 +26,9 @@
 
 {% block links %}
 	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+	{% comment %} <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> {% endcomment %}
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Nunito:wght@300;600;700&display=swap" rel="stylesheet">
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
 {% endblock links %}

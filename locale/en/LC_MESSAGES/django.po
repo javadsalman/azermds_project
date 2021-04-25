@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 19:40+0400\n"
+"POT-Creation-Date: 2021-04-25 16:42+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\app\blog\templates\article.html:107
+#: .\app\blog\templates\article.html:110
 msgid "Əlaqəli"
 msgstr "Related"
 
@@ -81,6 +81,10 @@ msgstr "A month ago"
 #: .\app\blog\templates\blog.html:117
 msgid "1 il əvvəl"
 msgstr "A year ago"
+
+#: .\app\blog\templates\includes\search-field.html:19
+msgid "Axtar"
+msgstr "Search"
 
 #: .\templates\admin\404.html:4 .\templates\admin\404.html:8
 msgid "Page not found"
