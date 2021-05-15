@@ -183,8 +183,6 @@ const imageController = (function (modalController) {
 
             image = new Image(img);
 
-            console.log(image.$image.width())
-
             if (image.hasCaption && !image.isEmogy) {
                 const {newImage, text} = addCaption(image);
                 addModalProperty(newImage, text);
