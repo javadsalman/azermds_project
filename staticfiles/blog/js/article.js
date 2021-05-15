@@ -169,7 +169,6 @@ const imageController = (function (modalController) {
 
     function addModalProperty(image, text) {
         image.click(() => {
-            console.log('isleyir')
             modalController.openModal();
             modalController.changeImage(image.attr('src'))
             if (text) {
