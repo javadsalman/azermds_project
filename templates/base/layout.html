@@ -46,11 +46,6 @@
             
             <span class="mr-2 d-none d-md-inline">{% trans "Cəfər Cabbarlı küçəsi 609, Globus Center 13-cü mərtəbə" %}</span>
 
-            {% comment %} <a tabindex="0" class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
-            +994-12-95-35-66 | +994 12 95-48-36">
-                <i class="fas fa-phone-alt"></i>
-            </a>
-            <span class="mr-2 d-none d-md-inline">+994 12 95-35-66 +994 12 95-48-36</span> {% endcomment %}
 
             <a tabindex="0"  class=" mr-3 mr-md-1" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="
             office.azermds@gmail.com">
@@ -85,12 +80,10 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top py-0 border-bottom" style="opacity: 0.9;">
         <figure class="m-0">
-            <a class="navbar-brand mr-0" href="{% url 'index' %}" style="padding-bottom: 2px;">
+            <a class="navbar-brand mr-0" href="{% url 'index' %}">
                 <img src="{% static 'base/index/images/azermds-1.png' %}" style="object-fit: fill" width="120" alt="AzerMDS vertical logo">
             </a>
-            <div class="font-weight-normal font-italic mdsblue" 
-            style="line-height: 95%; transform: skewX(-3deg); font-size: 12px; padding-bottom: 5px;">
-            Bir tibb tələbəsindən daha artıq...</div>
+            <div id="slogan" class="font-weight-normal font-italic mdsblue">Bir tibb tələbəsindən daha artıq...</div>
         </figure>      
 
 

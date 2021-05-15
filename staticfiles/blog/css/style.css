@@ -30,9 +30,20 @@ RESPONSIVE
 	typography
 \*----------------------------*/
 
-/* Custom Start */
 
 
+
+
+
+
+
+
+
+/* CUSTOM START */
+/* +++++++++++++++++++++++++++++++++ */
+
+
+/* ARTICLE STYLES */
 strong {
     font-family: 'Nunito Sans', sans-serif;
     color: #212631;
@@ -47,12 +58,22 @@ strong {
     display: inline-block;
     max-width: 100%;
     height: auto !important;
+    cursor: pointer;
+}
+
+img[style*="float:left"], image-figure[style*="float:left"] {
+    margin-left: 0 !important;
+}
+
+img[style*="float:right"], image-figure[style*="float:right"] {
+    margin-right: 0 !important;
 }
 
 .main-post [referrerpolicy] {
     width: inherit !important;
     border: none;
     display: inline-block;
+    cursor: default;
 }
 
 .image-figure {
@@ -93,6 +114,10 @@ strong {
         width: 100% !important;
         float: unset !important;
     }
+
+    .image-figure img {
+        width: 100%;
+    }
     
     .image-figure ~ br {
        display: none !important;
@@ -100,7 +125,66 @@ strong {
 
 }
 
-/* Custom End */
+
+/* MODAL STYLES */
+
+.modal-outside {
+    z-index: 1100;
+    width: 100%;
+    height: 100%;
+}
+
+.image-div {
+    z-index: 1200;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%)
+}
+
+.modal-image {
+    max-height: 90%;
+    
+}
+.image-content {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.close-icon {
+    z-index: 1300;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+@media only screen and (max-width: 1000px){
+    .modal-image {
+        max-width: 90vw !important;
+        max-height: 90%;
+    }
+
+    .image-div {
+        top: 60%
+    }
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++ */
+/* CUSTOM END */
+
+
+
+
+
+
 
  .font-style {
      font-family: 'Nunito', sans-serif;

@@ -84,7 +84,22 @@
 							{{article.get_content|safe}}
 						</article>
 
-						{% comment %} <div class="fb-share-button" data-href="https://azermds.org{{request.get_full_path}}"></div> {% endcomment %}
+						
+
+						<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalCenterTitle" aria-hidden="true">
+							<div class="modal-outside modal-dialog">
+							</div>
+							<span class="close-icon">
+								<i class="fas fa-times"></i>
+							</span>
+							<div class="image-div">
+								<img class="modal-image" src="https://www.azermds.org/media/article/images/IMG_3206.JPG" alt="">
+								<p class='image-content'></p>
+							</div>
+							
+						</div>
+
+
 						
 						<div id="share-section" class="post-shares sticky-shares">
 							<a id="fb-share-button" class="share-facebook" cursor="pointer"><i class="fab fa-facebook-f"></i></a>
