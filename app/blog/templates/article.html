@@ -30,7 +30,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Nunito:wght@300;600;700&display=swap" rel="stylesheet">
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="{% static 'blog/css/style.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'blog/css/style.css' %}" version="1"/>
 {% endblock links %}
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -157,5 +157,5 @@
 
 {% block scripts %}
 	<script src="{% static 'blog/js/main.js' %}"></script>
-	<script src="{% static 'blog/js/article.js' %}"></script>
+	<script src="{% static 'blog/js/article.js' %}" version="1"></script>
 {% endblock scripts %}

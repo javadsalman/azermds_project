@@ -61,13 +61,6 @@ strong {
     cursor: pointer;
 }
 
-img[style*="float:left"], image-figure[style*="float:left"] {
-    margin-left: 0 !important;
-}
-
-img[style*="float:right"], image-figure[style*="float:right"] {
-    margin-right: 0 !important;
-}
 
 .main-post [referrerpolicy] {
     width: inherit !important;
@@ -78,6 +71,7 @@ img[style*="float:right"], image-figure[style*="float:right"] {
 
 .image-figure {
     width: inherit;
+    display: inline-block
 }
 
 .image-figure img {
@@ -117,6 +111,7 @@ img[style*="float:right"], image-figure[style*="float:right"] {
 
     .image-figure img {
         width: 100%;
+        display: block;
     }
     
     .image-figure ~ br {

@@ -121,6 +121,10 @@ a.sred:hover {
     font-size: 19px;
 }
 
+.nav-link {
+    font-size: 20px;
+}
+
 .dropdown-menu {
     font-size: 15px;
 }
