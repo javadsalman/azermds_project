@@ -48,7 +48,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
         (None, {
             "fields": (
-                'slug_link', 'category'
+                'slug_link', 'category', 'show',
             ),
         }),
 
@@ -60,7 +60,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
     search_fields = ('title', 'title_english', 'content', 'content_english')
     list_filter = ('pub_date', 'category')
-    list_display = ('title', 'category', 'pub_date', 'article_link')
+    list_display = ('title', 'category', 'pub_date', 'article_link', 'show')
 
 
     def article_link(self, obj):
@@ -76,8 +76,8 @@ class ArticleAdmin(admin.ModelAdmin):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    fields = ('title', 'title_english', 'slug_link')
-    readonly_fields = ('slug_link',)
+    fields = ('title', 'title_english', 'slug_link', 'cover_tag', 'cover')
+    readonly_fields = ('slug_link', 'cover_tag')
 
     search_fields = ('title', 'title_english')
     list_display = ('title', 'category_link')

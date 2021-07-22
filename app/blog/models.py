@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields.files import ImageField
 from django.utils.text import slugify
 from django.utils.translation import get_language
 from ckeditor.fields import RichTextField
@@ -15,6 +16,7 @@ class Category(models.Model):
     title = models.CharField(max_length = 50, unique = True, null=False, verbose_name = 'Azərbaycanca Başlıq *')
     title_english = models.CharField(max_length = 50, unique = True, verbose_name = 'İngiliscə Başlıq')
     slug = models.SlugField(unique=True, default='', blank=True, verbose_name = 'Link')
+    cover = ProcessedImageField(upload_to='category/cover/', options={'quality': 150}, blank=True, null=True, verbose_name = 'Qapaq Şəkli', format='JPEG')
 
     def save(self, *args, **kwargs):
         self.slug = get_slug(self.title)
@@ -33,6 +35,11 @@ class Category(models.Model):
             return '-'
     slug_link.short_description = 'Link'
     slug_link.allow_tags = True
+    
+    def cover_tag(self):
+        return format_html(u'<img src="{}" width="200"/>'.format(self.cover.url))
+    cover_tag.short_description = 'Mövcud qapaq şəkli'
+    cover_tag.allow_tags = True
 
 class Article(models.Model):
     id = models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')
@@ -64,7 +71,8 @@ class Article(models.Model):
     slug = models.SlugField(default='', blank=True, verbose_name = 'Link')
     cover_image = ProcessedImageField(upload_to = 'article/cover/', options={'quality': 150}, blank=True, null=True, verbose_name = 'Qapaq Şəkli', format='JPEG')
     main_image = ProcessedImageField(upload_to = 'article/main_images', options={'quality': 90}, null=False, verbose_name = 'Əsas şəkil *', format='JPEG')
-    thumbnail = ImageSpecField(source = 'main_image', format='JPEG', options={'quality':60})
+    thumbnail = ImageSpecField(source='main_image', format='JPEG', options={'quality':60})
+    show = models.BooleanField(default=False, verbose_name='Göstərilsin')
     category = models.ForeignKey(Category, null=False, on_delete = models.PROTECT, verbose_name = 'Kateqoriya *')
     pub_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Paylaşılma Tarixi')
 

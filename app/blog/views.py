@@ -38,7 +38,7 @@ class BlogListView(ListView):
         else:
             articles = Article.objects.none()
 
-        return articles
+        return articles.filter(show=True)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

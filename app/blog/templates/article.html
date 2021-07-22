@@ -43,11 +43,13 @@
 
 {% block body %}
 	<!-- Header -->
-	<header id="header font-style">
+	<section id="header font-style">
 		<!-- Page Header -->
 		<div id="post-header" class="page-header">
 			{% if article.cover_image %}
 				<div class="background-img" style="background-image: url('{{article.cover_image.url}}');"></div>
+			{% elif article.category.cover %}
+				<div class="background-img" style="background-image: url('{{article.category.cover.url}}');"></div>
 			{% else %}
 				<div class="background-img" style="background-image: url('{% static 'blog/images/background-doctor.jpg' %}');"></div>
 			{% endif %}
@@ -68,7 +70,7 @@
 			</div>
 		</div>
 		<!-- /Page Header -->
-	</header>
+	</section>
 	<!-- /Header -->
 
 	<!-- section -->
@@ -80,6 +82,7 @@
 				<!-- Post content -->
 				<div class="col-md-8">
 					<div class="section-row sticky-container">
+						<p>{{article.category}}</p>
 						<article class="main-post">
 							{{article.get_content|safe}}
 						</article>
